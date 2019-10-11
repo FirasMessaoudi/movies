@@ -108,7 +108,7 @@ The translation is implemented using the Ngx Translate : The i18 N library for a
  **Clone the repo**  :blush:
 	 
 
-    git clone https://github.com/scofield1234/movies.git
+    git clone https://github.com/FirasMessaoudi/angular-springboot-movies-app.git
    ### Back-End ( Spring Boot )
 
   Setting up the database
@@ -229,4 +229,4 @@ In this bonus section we're gonna see how we can deploy our full stack applicati
 
 ## License
 
-Code released under the  [ MIT License](https://github.com/Houssem-Selmi/booki/blob/master/LICENSE.txt).
+Code released under the  [ MIT License](https://github.com/FirasMessaoudi/angular-springboot-movies-app/blob/master/LICENSE).
