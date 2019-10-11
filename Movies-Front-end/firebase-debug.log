@@ -1,0 +1,46 @@
+[debug] [2019-09-29T11:14:57.092Z] ----------------------------------------------------------------------
+[debug] [2019-09-29T11:14:57.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Firas Messaoudi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-09-29T11:14:57.099Z] CLI Version:   6.3.0
+[debug] [2019-09-29T11:14:57.099Z] Platform:      win32
+[debug] [2019-09-29T11:14:57.099Z] Node Version:  v10.15.1
+[debug] [2019-09-29T11:14:57.231Z] Time:          Sun Sep 29 2019 12:14:57 GMT+0100 (GMT+01:00)
+[debug] [2019-09-29T11:14:57.231Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-29T11:14:57.333Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-29T11:14:57.336Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Firas\MyMoviesApp
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2019-09-29T11:15:29.026Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2019-09-29T11:15:29.120Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com www.gstatic.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN www.gstatic.com www.gstatic.com:443

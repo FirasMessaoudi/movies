@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1afd28fd-9705-4979-905f-363f15c05f3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/dto/ContactDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/dto/mapper/ContactMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/MoviesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/MoviesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/model/WatchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/model/WatchList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/service/AuthenticationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteService.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/movies$MoviesApplication.ic" NAME="MoviesApplication Coverage Results" MODIFIED="1551885754561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tn.sesame.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/WatchListService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieNote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieFavorit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/ContactDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/ContactController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/mapper/ContactMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieUserID.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieFavoritService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Repository</find>
+      <find>SectionRepository</find>
+      <find>UserDTO</find>
+      <find>User</find>
+      <find>swa</find>
+      <find>Product</find>
+      <find>MovieFavorit</find>
+      <find>DemandeSSL</find>
+      <find>stud</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Service</replace>
+      <replace>SectionService</replace>
+      <replace>Product</replace>
+      <replace>Category</replace>
+      <replace>Section</replace>
+      <replace>MovieDTO</replace>
+      <replace>Movie</replace>
+      <replace>WatchList</replace>
+      <replace>Contact</replace>
+      <replace>person</replace>
+      <replace>pers</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Firas\movies-master\movies\src\main\java</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/Section.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/CategoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/mapper/MovieMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/dto/MovieDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/dto/CategoryDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/configuration/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/ProductRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/criteria/MovieCritere.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/criteria/MovieSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/WatchListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/FavoritService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/FavoritServiceImplements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieNote.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieFavorit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/WatchListRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/MovieFavoritRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieFavoritService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/WatchListService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/MovieNoteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/FavorisConroller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/MovieNoteController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/repository/ContactRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/WatchListController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/WatchList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/MoviesApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/model/Contact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/serviceImplement/WatchListService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/dto/mapper/ContactMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/controller/ContactController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tn/sesame/dto/ContactDTO.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="movies" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="movies" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sesame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sesame" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570797436042" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ANCE/REC_ANCE/REC_ANCE_CODE_SOURCE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tn.sesame.repository" />
+      <recent name="tn.sesame.service.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Firas\movies-master\movies\src\main\java\tn\sesame" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MoviesApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="DATABASE_URL" value="jdbc:postgresql://localhost:5432/movies" />
+        <env name="DATABASE_USERNAME" value="postgres" />
+        <env name="DATABASE_PASSWORD" value="root" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="tn.sesame.MoviesApplication" />
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.sesame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1afd28fd-9705-4979-905f-363f15c05f3f" name="Default Changelist" comment="" />
+      <created>1548759734039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548759734039</updated>
+      <workItem from="1548759740823" duration="901000" />
+      <workItem from="1548760719122" duration="3933000" />
+      <workItem from="1548837807670" duration="2097000" />
+      <workItem from="1548921662853" duration="3731000" />
+      <workItem from="1549007910085" duration="4723000" />
+      <workItem from="1549267778127" duration="5122000" />
+      <workItem from="1549352788325" duration="10161000" />
+      <workItem from="1549438297359" duration="7106000" />
+      <workItem from="1549527101708" duration="7109000" />
+      <workItem from="1549874912096" duration="7013000" />
+      <workItem from="1549898054599" duration="707000" />
+      <workItem from="1549957752363" duration="13337000" />
+      <workItem from="1550043959966" duration="205000" />
+      <workItem from="1551279820106" duration="1213000" />
+      <workItem from="1551340602482" duration="849000" />
+      <workItem from="1551428319550" duration="16784000" />
+      <workItem from="1551688008422" duration="16527000" />
+      <workItem from="1551773155633" duration="15005000" />
+      <workItem from="1551860047846" duration="15227000" />
+      <workItem from="1551946112709" duration="637000" />
+      <workItem from="1552031973133" duration="4259000" />
+      <workItem from="1552291675610" duration="632000" />
+      <workItem from="1552378303988" duration="633000" />
+      <workItem from="1554888279363" duration="196000" />
+      <workItem from="1555422965386" duration="671000" />
+      <workItem from="1555497945501" duration="2030000" />
+      <workItem from="1555591026400" duration="5000" />
+      <workItem from="1556119570290" duration="7824000" />
+      <workItem from="1556882306932" duration="592000" />
+      <workItem from="1556884256626" duration="588000" />
+      <workItem from="1556966952498" duration="590000" />
+      <workItem from="1556983866856" duration="1187000" />
+      <workItem from="1557068081860" duration="594000" />
+      <workItem from="1557392417767" duration="1053000" />
+      <workItem from="1557397547622" duration="593000" />
+      <workItem from="1558168907995" duration="589000" />
+      <workItem from="1558188187345" duration="577000" />
+      <workItem from="1558529993659" duration="2837000" />
+      <workItem from="1559051074362" duration="1319000" />
+      <workItem from="1559918974676" duration="1227000" />
+      <workItem from="1561374584681" duration="8061000" />
+      <workItem from="1561641072014" duration="4162000" />
+      <workItem from="1561708429640" duration="3237000" />
+      <workItem from="1564565653500" duration="30114000" />
+      <workItem from="1565342940792" duration="1702000" />
+      <workItem from="1565346039944" duration="850000" />
+      <workItem from="1565372445684" duration="7204000" />
+      <workItem from="1565682730834" duration="1662000" />
+      <workItem from="1569422448993" duration="11628000" />
+    </task>
+    <task id="LOCAL-00001" summary="Couche service">
+      <created>1565376223768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565376223768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Couche Web">
+      <created>1565377759191</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565377759191</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Couche Web">
+      <created>1565426723946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565426723946</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update properties">
+      <created>1565427945213</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565427945213</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="229003000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12438625" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.93453354" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.19639935" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49924356" weight="0.19639935" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.33387887" />
+      <window_info anchor="bottom" id="SonarQube" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info active="true" anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last version" />
+    <MESSAGE value="Couche service" />
+    <MESSAGE value="Couche Web" />
+    <MESSAGE value="update properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="update properties" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/CategoryDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/SectionRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/ProductRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/criteria/MovieCritere.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/criteria/MovieSpecification.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/Category.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/CategoryController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/CategoryService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/Product.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/ProductController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/CategoryServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/AdminController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/AuthorityName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/MovieRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/MovieDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/MovieController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/WatchListServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/FavoritService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/FavoritServiceImplements.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/WatchListRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/MovieFavoritRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/MovieNoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/MovieNoteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/security/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/FavorisConroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/WatchListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/WatchList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tn/sesame/MoviesApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/repository/ContactRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/AuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/MoviesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieNoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/MovieFavoritService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/WatchListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieUserID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/MovieFavorit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/model/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/mapper/ContactMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/service/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/controller/ContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tn/sesame/dto/ContactDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="D:\Firas\movies-master\movies" />
+    <option value="install" />
+    <option value="clean" />
+  </component>
+</project>
