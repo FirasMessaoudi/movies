@@ -1,0 +1,47 @@
+<div class="spinner" *ngIf="isLoadingResults">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div class="person">
+<div class="flex justify-content-center" *ngIf="person">
+  <div class="d-flex justify-content-center">
+  <img  src="https://image.tmdb.org/t/p/w185/{{person.profile_path}}" alt="profile">
+  </div>
+  <h2>{{person.name}}</h2>
+  <p style="text-align:center">Born on {{person.birthday | date}}</p>
+  <p>{{person.biography}}</p>
+</div>
+
+<mat-tab-group>
+  <mat-tab label="{{'App.Star movie' | translate}}">
+    <section class="items" *ngIf="movies">
+      <div *ngFor="let movie of movies">
+          <app-cardmovie [section]=" 'Movies' " [id] ="movie.id" [image] = "movie.poster_path" [title] = "movie.title">
+          
+            </app-cardmovie>    
+        <!-- <a (click)="addMovie(movie.id)">
+          <img  *ngIf="movie.poster_path" [src]="'https://image.tmdb.org/t/p/w185/' + movie.poster_path"
+            alt="poster movie">
+            </a>
+          <img *ngIf="!movie.poster_path" src="assets/images/no_poster_available.jpg" alt="No poster available">
+          <div class="card-body">
+          <h4 class="card-title">{{movie.title}}</h4>
+          <p class="card-text">( {{movie.character}} )</p>
+        </div> -->
+      </div>
+    </section>
+  </mat-tab>
+  <mat-tab label="{{'App.Star tv' | translate}}">
+    <section class="items" *ngIf="tv_credits">
+      <div *ngFor="let tv of tv_credits">
+          <app-cardmovie [section]=" 'Series' " [id] ="tv.id" [image] = "tv.poster_path" [title] = "tv.name">
+          
+            </app-cardmovie>    
+      </div>
+    </section>
+  </mat-tab>
+</mat-tab-group>
+</div>

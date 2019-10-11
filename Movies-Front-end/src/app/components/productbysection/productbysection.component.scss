@@ -1,0 +1,154 @@
+  .form-control{
+    width: 15em;
+    height: 3em;
+    position: relative;
+    display: flex;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+   color: #ffffff;
+  }
+  ::placeholder{
+    color: aliceblue;
+  }
+  .container {
+    background-color: transparent;
+    justify-content: center;
+  }
+ 
+ /*.pagination {
+   padding-left: 40% !important;
+ }*/
+ /* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 15em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+.col-{
+  margin: 7px !important;
+}
+// .example-form {
+//   min-width: 150px;
+//   max-width: 500px;
+//   width: 100%;
+// }
+
+// .example-full-width {
+//   width: 100%;
+// }
+// spinner
+
+h1{
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  color: #e91e63;
+}
+
+$spinner-size: 4rem;
+$spinner-thickness: 0.1em;
+$animation-speed: 2s;
+
+.spinner {
+  span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: $spinner-size;
+    height: $spinner-size;
+    border: $spinner-thickness solid #9c27b0;
+    animation: $animation-speed infinite spin ease-in-out;
+    
+      &:nth-child(1){
+        animation-delay: 0s;
+      }
+      &:nth-child(2){
+        animation-delay: 0.1s;
+      }
+      &:nth-child(3){
+        animation-delay: 0.2s;
+      }
+      &:nth-child(4){
+        animation-delay: 0.3s;
+      }
+      &:nth-child(5){
+        animation-delay: 0.4s;
+      }
+  }
+}
+
+@keyframes spin{
+  0%{
+    transform: translate(-50%, -50%) rotate(0) scale(0);
+    border-radius: 0%;
+    border-color: #9c27b0;
+  }
+  50%{
+    transform: translate(-50%, -50%) rotate(180deg) scale(2.5);
+    border-radius: 50%;
+    border-color: #e91e63;
+  }
+  70%{
+    transform: translate(-50%, -50%) rotate(180deg) scale(2.5);
+    border-radius: 50%;
+    border-color: #9c27b0;
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg) scale(0);
+    border-radius: 0%;
+    border-color: #9c27b0;
+  }
+}
+.row{
+  margin-right: 0%;
+}

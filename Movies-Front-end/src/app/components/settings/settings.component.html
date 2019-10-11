@@ -1,0 +1,95 @@
+<div class="about">
+  <div class="about__head">
+    <img style="width: 200px" src="assets/images/box.png" alt="logo">
+    <h2 style="padding-top: 3%">Movies Box</h2>
+    <p style="color: blanchedalmond">Movies Box is your guide to explore the latest movies and series .</p>
+    
+  </div>
+  <div class="about__body">
+    <div class="about--container">
+      <div class="about--info">
+        <mat-icon>message</mat-icon>
+        <h3>Contact</h3>
+        <p  style="color: blanchedalmond">If you have any suggestion or for further informations click  <a style="color: #FF424F" (click)="frame.show()"> here </a> to contact us</p>
+      </div>
+    </div>
+    <div class="about--container">
+      <div class="about--info">
+        <mat-icon>perm_identity</mat-icon>
+        <h3>Developer</h3>
+        <p  style="color: blanchedalmond">Firas Messaoudi</p>
+      </div>
+    </div>
+    <div class="about--container">
+      <div class="about--info">
+        <mat-icon>movie_filter</mat-icon>
+        <h3>The movie Database</h3>
+        <p  style="color: blanchedalmond">This application is developed using the movie database (Tmdb)</p>
+      </div>
+    </div>
+    <div class="about--container">
+      <div class="about--info">
+        <mat-icon>language</mat-icon>
+        <h3>Language</h3>
+        <div style="width: 11%;padding-top: 1.5%" class="setting">
+          <mat-select placeholder="{{'App.Language' | translate}}" [ngModel]="lang" (selectionChange)="languageChange($event)">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{ language.viewValue }}
+            </mat-option>
+          </mat-select>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Contact form -->
+
+   
+<div style="overflow-y: scroll" mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
+      <div class="modal-header text-center">
+        <h4 style="color: black" class="modal-title w-100 font-weight-bold">Write to us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <mat-icon>perm_identity</mat-icon>
+          <input formControlName="name" placeholder="Name" type="text" id="form34" class="form-control validate" mdbInputDirective>
+          <!-- <label data-error="wrong" data-success="right" for="form34">Your name</label> -->
+        </div>
+
+        <div class="md-form mb-5">
+            <mat-icon>email</mat-icon>
+
+          <input formControlName="email" placeholder="Email" type="email" id="form29" class="form-control validate" mdbInputDirective >
+        </div>
+
+        <div class="md-form mb-5">
+
+            <mat-icon>subject</mat-icon>
+            <input formControlName="subject" placeholder="Subject" type="text" id="form32" class="form-control validate" mdbInputDirective >
+        </div>
+
+        <div class="md-form">
+            <mat-icon>message</mat-icon>
+            <textarea formControlName="message" placeholder="Message" type="text" id="form8" class="md-textarea form-control" rows="1" mdbInputDirective
+            ></textarea>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button style="background-color: #FF424F !important" mdbBtn color="unique" class="waves-light" mdbWavesEffect>Send
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </form>
+
+    </div>
+  </div>
+</div>

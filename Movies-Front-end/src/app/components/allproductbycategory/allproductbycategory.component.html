@@ -1,0 +1,43 @@
+<app-page-not-found *ngIf="showError"></app-page-not-found>
+<div *ngIf="!showError" style="padding: 20px">
+  
+    <div class="card-header bg-gray text-white">
+      <h2  style="color: #FFF;font-family: sans-serif;">{{name}} {{section}}
+      </h2>
+    </div>
+ 
+    <section *ngIf="section=='Movies'"  class="items">
+        <div class="spinner" *ngIf="isLoading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+      <div *ngFor="let item of movies?.results | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+          <app-cardmovie [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+          
+            </app-cardmovie>    
+        </div>
+      </section>
+      <section *ngIf="section=='Series'"  class="items">
+          <div class="spinner" *ngIf="isLoading">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+      
+        <div *ngFor="let item of movies?.results | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+            <app-cardmovie [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+         
+              </app-cardmovie>  
+          </div>
+        </section>
+        <div class="row justify-content-center">
+            <pagination-controls (pageChange)="changePage($event)"></pagination-controls>
+          </div>
+
+        </div>

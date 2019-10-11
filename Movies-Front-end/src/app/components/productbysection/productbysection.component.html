@@ -1,0 +1,131 @@
+<app-page-not-found *ngIf="showError"></app-page-not-found>
+
+<div  *ngIf="!showError" class="card" style="padding: 17px;text-align: center;background-color: #13151a">
+  <div class="spinner" *ngIf="isLoading; else show">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ng-template #show>
+    <div class="container" style="padding-left: 3%;padding-top: 2%">
+      <div class="row">
+       <div class="col-">
+          <!-- <div class="md-form" style="width: 100% !important">
+          <input  mdbInput class="form-control" style="color: whitesmoke;" type="text" [(ngModel)]="keyword" placeholder="{{'App.Search' | translate}}" (input)="search()">
+          </div> -->
+          <!-- <div class="md-form"> -->
+              <input  mdbInput placeholder="{{'App.Find' | translate}}" [(ngModel)]="keyword" (input)="search()" type="text" id="form58" class="form-control">
+            <!-- </div> -->
+        </div>
+        <div class="col-">
+            <div class="select">
+                <select [(ngModel)]="genre"  (change)="discover()" name="slct" id="slct">
+                    <option selected value="" >{{'App.Genre' | translate}}</option>
+                  <option  *ngFor="let cat of categories?.genres" [value]="cat.id">{{cat.name}}</option>
+                  <!-- <option value="2">No JS</option>
+                  <option value="3">Nice!</option> -->
+                </select>
+              </div>
+             </div>
+
+        <div class="col-">
+            <div class="select">
+                <select [(ngModel)]="year" (change)="discover()" name="slct" id="slct">
+                 <option selected value="" >{{'App.Year' | translate}}</option>
+                  <option *ngFor="let item of getYears()" [value]="item">{{item}}</option>
+                 
+                </select>
+              </div>
+        </div>
+
+              <div class="col-" *ngIf="name=='Series'">
+                  <div class="select">
+                      <select [(ngModel)]="network" (change)="discover()" name="slct" id="slct">
+                          <option selected value="" >{{'App.Company'| translate}}</option>
+                           <option *ngFor="let item of networks" [value]="item.id">{{item.name}}</option>
+                          
+                         </select>
+                    </div>
+                    </div>
+                    <div class="col-" *ngIf="name=='Movies'">
+                        <div class="select">
+                            <select [(ngModel)]="companie" (change)="discover()" name="slct" id="slct">
+                                <option selected value="" >{{'App.Company'|translate}}</option>
+                                 <option *ngFor="let item of companies" [value]="item.id">{{item.name}}</option>
+                                
+                               </select>
+                          </div>
+                          </div>
+
+
+                   
+
+                   </div> 
+
+
+                         <div class="row">
+                           
+                            <div class="col-">
+                                <div class="select">
+                                    <select [(ngModel)]="language" (change)="discover()" name="slct" id="slct">
+                                      <option selected value="" >{{'App.Country'|translate}}</option>
+                                      <option  *ngFor="let country of countries" [value]="country.id">{{country.name}}</option>
+        
+                                    </select>
+                                  </div>
+                                  </div>
+                            <div class="col-" *ngIf="name=='Movies'">
+                                <div class="select">
+                                    <select [(ngModel)]="rating" (change)="discover()" name="slct" id="slct">
+                                      <option selected value="" >{{'App.Rating'|translate}}</option>
+                                      <option  *ngFor="let rate of certifications" [value]="rate">{{rate}}</option>
+        
+                                    </select>
+                                  </div>
+                                  </div>
+                          <div class="col-">
+                              <div class="select">
+                                  <select [(ngModel)]="sortby" (change)="discover()" name="slct" id="slct">
+                                    <option selected value="" >{{'App.Sort by'|translate}}</option>
+                                    <option  value="vote_average.desc">Vote</option>
+                                    <option  value="popularity.desc">Popularity</option>
+                                    <option [disabled]="name=='Series'" value="revenue.desc">{{'App.Box_office'|translate}}</option>
+
+                                   
+                                  </select>
+                                </div>
+                                </div>
+                              </div>
+       
+      </div>
+      <!--  -->
+     
+  <section *ngIf="name=='Movies'"  class="items">
+     
+  
+    <div (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" *ngFor="let item of movies | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+        <app-cardmovie [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+          </app-cardmovie>    
+      </div>
+  </section>
+    <section *ngIf="name=='Series'"  class="items">
+      
+    
+      <div (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" *ngFor="let item of shows?.results | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+          <app-cardmovie [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+            </app-cardmovie>  
+        </div>
+      </section>
+      <div class="row justify-content-center">
+        <pagination-controls (pageChange)="changePage($event)"></pagination-controls>
+      </div>
+  </ng-template>
+  
+ 
+  </div>
+  
+  

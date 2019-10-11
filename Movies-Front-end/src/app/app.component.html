@@ -1,0 +1,13 @@
+<!-- <div *ngIf="router.url ==='' || router.url==='/home'; else other">
+</div> -->
+<!-- <ng-container *ngIf="router.url !=='/' && router.url !=='/home'"> -->
+<app-navbar></app-navbar>
+<!-- </ng-container> -->
+<router-outlet>
+</router-outlet>
+<div id="btn-returnToTop">
+        <button style="background-color: #FF424F !important" mat-mini-fab color="primary" (click)="scrollTop()">
+          <mat-icon>arrow_upward</mat-icon>
+        </button>
+</div>
+<app-footer></app-footer>

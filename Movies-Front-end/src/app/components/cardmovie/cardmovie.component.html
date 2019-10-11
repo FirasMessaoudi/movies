@@ -1,0 +1,26 @@
+<div class="card hovereffect" style="width: 200px;height:330px;margin: 10px;" >
+    <a [routerLink]="['/viewDetail',section, id]">
+<div class="myImage ">
+    <img *ngIf="image" [defaultImage]="'assets/images/no_poster_available.jpg'" class="card-img-top " style="height: 330px;" [lazyLoad]="'https://image.tmdb.org/t/p/original/' + image" alt="Card image cap">
+    <img *ngIf="!image" class="card-img-top " style="height: 330px;" src="/assets/images/no_poster_available.jpg" alt="Card image cap">
+    <div class="overlay">
+    <div class="middle">
+      <div class="text">{{title}}  ({{dateRelease | date: 'y'}})</div>
+    </div>
+    <div class="middlenote">
+        <div class="textnote">
+          {{note}}
+            <i class="fa fa-star"></i>
+        </div>
+      </div>
+      <div class="middlevisit">
+          <div class="textnote">
+              
+            {{numbervisits}}
+            <i class="fa fa-eye"></i>
+          </div>
+        </div>
+      </div>
+      </div>
+      </a>
+      </div>

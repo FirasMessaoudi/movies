@@ -1,0 +1,166 @@
+<!--<div style="background-color: #333333; margin-top: 15px;">
+    <ngb-carousel *ngIf="highlightmovies">
+        <ng-template ngbSlide *ngFor="let item of highlightmovies">
+          <a style="width: 100%" [routerLink]="['/viewDetail', item.idProduct]">
+          <img [src]="item.cover" alt="Random first slide" style="width: 100%;height: 550px;">
+          </a>
+          <div class="carousel-caption" style="text-align: left;">
+            <h3>{{item.title}} ({{item.dateRelease | date : 'y'}})</h3>
+            IMDB: {{item.noteImdb}} Genre:
+            <a style="color: aliceblue;" *ngFor="let cat of item.categories" [routerLink]="['/productByCategory', 1,cat.name]" >
+              ,{{cat.name}} 
+            </a>
+          </div>
+        </ng-template>
+       
+      </ngb-carousel>
+    </div>
+  -->
+<!-- <nz-carousel nzAutoPlay nzAutoPlaySpeed="5000">
+      
+  
+      <div nz-carousel-content *ngFor="let item of highlightmovies">
+        
+          <img [src]="item.cover" alt="Random first slide" style="width: 100%;height: 600px;opacity: 0.3;">
+          <span style="color: aliceblue">{{item.title}}</span>
+        
+      </div>
+    </nz-carousel>
+  -->
+  <!-- <div style="padding-left: 50%;padding-top: 13%" *ngIf="!highlightmovies">
+      <ng-template #indicatorTemplate><i nz-icon type="loading" style="font-size: 24px;"></i>
+      </ng-template>
+      <nz-spin [nzIndicator]="indicatorTemplate">
+      </nz-spin>`
+  </div>
+  <div *ngIf="highlightmovies">
+    <div class="highlightimage" [ngStyle]="{'background-image': 'url('+highlightmovies[0].cover+')'}" >
+    
+   
+    <div class="movieheader">
+     <app-navbarhome></app-navbarhome>
+   </div>
+    <div class="moviedetails d-flex">
+     <div class="details">
+        <a style="width: 100%" [routerLink]="['/viewDetail', highlightmovies[0].idProduct]">
+       <span class="title">{{highlightmovies[0].title}} ({{highlightmovies[0].dateRelease | date : 'y'}})</span>
+       </a>
+       <p style="margin-bottom: 0.5rem;">
+          <strong class="notegenre"><strong style="padding-right:1%;color: #fbb829 ">IMDb</strong>{{highlightmovies[0].noteImdb}} <strong style="padding-left:1%">Genre: </strong></strong>
+          <a class="notegenre" *ngFor="let cat of highlightmovies[0].categories" [routerLink]="['/allProductByCategory',cat.name]" >
+              {{cat.name}}, 
+            </a>
+       </p>
+       <p class="description">
+        {{highlightmovies[0].description}}
+       </p>
+     </div>
+   </div>
+  </div>
+
+  </div> -->
+
+  <!-- <mdb-carousel style="height: 500px" class="carousel slide carousel-fade w-100" [animation]="'fade'">
+      <mdb-carousel-item *ngFor="let item of highlightmovies?.results | paginate: { itemsPerPage: 6, currentPage: p}">
+      <a  (click)="goToMovie(item.id)">
+        <div class="view w-100">
+          <img class="d-block w-100" [src]=" 'https://image.tmdb.org/t/p/original' +item.backdrop_path " alt="First slide">
+          <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+        </div>
+      </a>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">{{item.title}}</h3>
+          <p><span style="color: #fbb829;font-weight: 700;">Imdb</span> {{item.vote_average}}</p>
+        </div>
+  
+      </mdb-carousel-item>
+      <mdb-carousel-item *ngFor="let item of tvs?.results | paginate: { itemsPerPage: 6, currentPage: p}">
+        <div class="view w-100">
+          <img class="d-block w-100" [src]=" 'https://image.tmdb.org/t/p/original' +item.backdrop_path " alt="First slide">
+          <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">{{item.name}}</h3>
+          <p><span style="color: #fbb829;font-weight: 700;">Imdb</span> {{item.vote_average}}</p>
+        </div>
+      </mdb-carousel-item>
+      
+    </mdb-carousel> -->
+
+
+    <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[0]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[1]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[2]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[3]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-5" />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[4]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-6" />
+        <li class="slide-container">
+            <div class="slide">
+                <img [src]=" 'https://image.tmdb.org/t/p/original' +highlightmovies?.results[5]?.backdrop_path "/>
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        </li>
+    </ul>

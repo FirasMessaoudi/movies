@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed !important;
+}
+a{
+    text-shadow: #000;
+    color: #fff;
+    font-family: Arial,sans-serif;
+}
+.mycolor {
+    background-color: transparent !important;
+}
+a:hover{
+border-bottom: 2px solid #FF424F!important;
+}
+a:active{
+border-bottom: 2px solid #FF424F !important;
+}
+.sdiv{
+    position: relative;
+    
+}
+.search{
+    position: absolute;
+    position: top right;
+    background-color:transparent;
+    border:transparent;
+    margin-top: 7px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.fa-search {
+    color: aliceblue !important;
+}
+.stext{
+    background-color: #24272e;;
+    color: aliceblue;
+    border: #24272e;;
+    border-radius: 35px;
+    width: 100%;
+    padding-left: 33px !important;
+
+}
+.form-inline{
+    padding-right: 8% !important;
+}

@@ -1,0 +1,154 @@
+ <div class="card border-0" style="width: 200px;margin: 10px;" >
+  <div class="hovereffect">
+<!-- <div class="myImage" (mouseover)="checkIfExistInWatchList()" nzPlacement="top" nz-popover nzTitle="{{title}}" [nzContent]="contentTemplate" >
+  !--->
+  <a (click)="basicModal.show();checkIfExistInWatchList()">
+  <div class="myImage" >
+    <img *ngIf="image" [defaultImage]="'assets/images/no_poster_available.jpg'" class="card-img-top " style="height: 330px;" [lazyLoad]="'https://image.tmdb.org/t/p/original/' + image" alt="Card image cap">
+    <img *ngIf="!image" class="card-img-top " style="height: 330px;" src="/assets/images/no_poster_available.jpg" alt="Card image cap">
+    <div class="overlay">
+    <div class="middle">
+      <div class="text"></div>
+    </div>
+    <div class="middlenote">
+        <div class="textnote">
+          
+        </div>
+      </div>
+      <div class="middlevisit">
+          <div class="textnote">
+              
+           
+          </div>
+        </div>
+      </div>
+      </div>
+    </a>
+      </div>
+<!--       
+      <div *ngIf="visible" style="margin-top:5px">
+    
+            <button  matTooltip="Add to wachlist" *ngIf="!existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+                <mat-icon  class="mat-blue">add_box </mat-icon>&nbsp; &nbsp;
+              </button>
+           
+          
+            <button  matTooltip="Remove from wachlist" *ngIf="existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+                <mat-icon  class="mat-red">remove </mat-icon>&nbsp; &nbsp;
+              </button>
+           
+        
+              <button  matTooltip="Add to favorites"*ngIf="!existInFavoris" (click)="addOrDeleteFavorite()" mat-button >
+                <mat-icon class="mat-red">favorite_border</mat-icon>&nbsp;&nbsp;
+              </button>
+          
+              <button  matTooltip="Remove from favorites" *ngIf="existInFavoris" (click)="addOrDeleteFavorite()" mat-button >
+                <mat-icon class="mat-red">favorite</mat-icon>&nbsp;&nbsp;
+              </button>
+        
+          
+            <button  matTooltip="Mark as watched"*ngIf="!watched && existInwatchList" mat-button (click)="watchMovie()">
+            <mat-icon class="mat-green"> visibility</mat-icon>
+           </button>
+           <button  matTooltip="not watched yet" *ngIf="watched && existInwatchList" mat-button (click)="watchMovie()">
+              <mat-icon class="mat-green"> visibility_off</mat-icon>
+             </button>
+      
+        </div> -->
+      </div>
+
+
+
+
+      <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h2 [routerLink]="['/viewDetail',section, id]" style="color: black;cursor: pointer;" class="modal-title w-100" id="myModalLabel">{{title}}</h2>
+            </div>
+            <div class="modal-body">
+                 
+      <div *ngIf="visible" style="margin-top:5px">
+    
+        <!-- <button  matTooltip="Add to wachlist" *ngIf="!existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+            <mat-icon  class="mat-blue">add_box </mat-icon>&nbsp; &nbsp;
+          </button> -->
+       
+      
+        <button  matTooltip="Remove from wachlist" *ngIf="existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+            <mat-icon  class="mat-red">remove </mat-icon>&nbsp; &nbsp;
+          </button>
+       
+    
+          <!-- <button  matTooltip="Add to favorites"*ngIf="!existInFavoris" (click)="addOrDeleteFavorite()" mat-button >
+            <mat-icon class="mat-red">favorite_border</mat-icon>&nbsp;&nbsp;
+          </button> -->
+      
+          <button  matTooltip="Remove from favorites" *ngIf="existInFavoris" (click)="addOrDeleteFavorite()" mat-button >
+            <mat-icon class="mat-red">favorite</mat-icon>&nbsp;&nbsp;
+          </button>
+    
+      
+        <button  matTooltip="Mark as watched"*ngIf="!watched && existInwatchList" mat-button (click)="watchMovie()">
+        <mat-icon class="mat-green"> visibility</mat-icon>
+       </button>
+       <button  matTooltip="not watched yet" *ngIf="watched && existInwatchList" mat-button (click)="watchMovie()">
+          <mat-icon class="mat-green"> visibility_off</mat-icon>
+         </button>
+  
+    </div> <br>
+    <h4 style="color: black"> Rate this program</h4>
+    <div style="padding-left: 40%">
+      <bar-rating [(rate)]="rate" (rateChange)="rateMovie($event)" [max]="5" [theme]="'fontawesome'"> </bar-rating>    
+
+    </div>
+
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
+              <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<!--       
+      <ng-template #contentTemplate>
+          <div>
+            <p style="margin-right:10px;" >
+              <button *ngIf="!existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+                  <mat-icon  class="mat-teal">add_box </mat-icon>&nbsp;Watch list &nbsp;&nbsp;
+                </button>
+             </p>
+             <p style="margin-right:10px;" >
+              <button *ngIf="existInwatchList" mat-button  (click)="addOrDeleteToMyWatchList()">
+                  <mat-icon  class="mat-teal">remove </mat-icon>&nbsp;Watch list &nbsp;&nbsp;
+                </button>
+             </p>
+            <p>
+                <button *ngIf="!existInFavoris" (click)="addOrDeleteFromFavorit()" mat-button >
+                  <mat-icon class="mat-red">favorite_border</mat-icon>&nbsp;Favorite&nbsp;&nbsp;
+                </button>
+            </p>
+            <p>
+                <button *ngIf="existInFavoris" (click)="addOrDeleteFavorite()" mat-button >
+                  <mat-icon class="mat-red">favorite</mat-icon>&nbsp;Favorite&nbsp;&nbsp;
+                </button>
+            </p>
+            <p *ngIf="existInwatchList">
+              <button *ngIf="!watched" mat-button (click)="watchMovie()">
+              <mat-icon> visibility</mat-icon>&nbsp;Watched
+             </button>
+             <button *ngIf="watched" mat-button (click)="watchMovie()">
+                <mat-icon> visibility_off</mat-icon>&nbsp;Not watched yet
+               </button>
+            </p>
+          </div>
+</ng-template> -->

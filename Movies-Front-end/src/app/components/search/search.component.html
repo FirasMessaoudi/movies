@@ -1,0 +1,56 @@
+<app-page-not-found *ngIf="showError"></app-page-not-found>
+
+<div  *ngIf="!showError" class="card mt-3" style="width: 100%;background-color: #13151a">
+ 
+    <div class="card-header bg-gray text-white"style="width: 100%;background-color: #13151a">
+      <h2  style="color: #FFF;font-family: sans-serif;"> {{'App.Results' | translate}} '{{keyword}}'
+      </h2>
+    </div>
+    <div class="spinner" *ngIf="isLoading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    <!--Tabs-->
+    <mat-tab-group *ngIf="movies?.results?.length >0 || shows?.results?.length >0; else notfound">
+  <mat-tab label="Movies">
+      <div class="row my-films justify-content-center" style="width: 100%;text-align: center;padding-left: 2%;">
+          <div *ngFor="let item of movies?.results | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+              <app-cardmovie [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+          
+                </app-cardmovie>    
+            </div>
+            
+      
+        <div>
+        </div>
+          </div>
+          <div class="row justify-content-center">
+              <pagination-controls (pageChange)="changePage($event)"></pagination-controls>
+            </div>
+    </mat-tab>
+            <!-- shows -->
+
+    <mat-tab label="Shows">
+        <div class="row my-films justify-content-center" style="width: 100%;text-align: center;padding-left: 2%;">
+            <div *ngFor="let item of shows?.results | paginate: { itemsPerPage: s, currentPage: ps,totalItems : ts }; let i = index">
+                <app-cardmovie [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+                  </app-cardmovie>
+              </div>
+              
+        
+        
+            </div>
+            <div class="row justify-content-center">
+                <pagination-controls (pageChange)="changePageS($event)"></pagination-controls>
+              </div>
+    </mat-tab>
+    </mat-tab-group>
+   </div>
+
+
+                

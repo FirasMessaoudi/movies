@@ -1,0 +1,88 @@
+
+<mat-tab-group style="margin-top:20px">
+    <mat-tab label="{{'App.My Favorits' | translate}}">
+        <div class="card" style="width: 100%;background-color:#13151a;">
+           
+            <div style="padding-left: 40%" *ngIf="!favoritsMovies && !favoritsTv">
+              <p style="color: white;padding-top: 3%">Your favorit list is empty 
+                <mat-icon>sentiment_very_dissatisfied</mat-icon>
+              </p>
+            </div>
+            <div class="row justify-content-center my-films" style="width: 100%;text-align: center;padding-left: 2%;">
+              <div *ngFor="let item of favoritsTv">
+                <app-modalfavorit (updateWatchlist)="updateWatchlist($event)" (updateFav)="updateFav($event)" [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+                </app-modalfavorit>
+
+              </div>
+              <div  *ngFor="let item of favoritsMovies">
+                
+                <app-modalfavorit (updateWatchlist)="updateWatchlist($event)" (updateFav)="updateFav($event)" [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+                </app-modalfavorit>    
+                    
+                
+              </div>
+              
+            
+        
+                </div>
+          </div>
+    </mat-tab>
+    <mat-tab label="{{'App.To watch' | translate}}">
+        <div class="card" style="width: 100%;background-color:#13151a;">
+       
+            <div class="row justify-content-center my-films" style="width: 100%;text-align: center;padding-left: 2%;">
+              <div  *ngFor="let item of unWatchedMovies">
+                
+                <app-modalfavorit (updateFav)="updateFav($event)"  (updateWatchlist)="updateWatchlist($event)" [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+                </app-modalfavorit>    
+                    
+                
+              </div>
+              <!-- Series -->
+
+              <div  *ngFor="let item of unWatchedTv">
+                
+                <app-modalfavorit (updateFav)="updateFav($event)"  (updateWatchlist)="updateWatchlist($event)" [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+                </app-modalfavorit>
+                    
+                
+              </div>
+          
+                </div>
+          </div>
+    </mat-tab>
+    <mat-tab label="{{'App.watched' | translate}}">
+        <div class="card" style="width: 100%;background-color:#13151a">
+           
+         
+            <div class="row justify-content-center my-films" style="width: 100%;text-align: center;padding-left: 2%;">
+              <div  *ngFor="let item of watchedMovies">
+                
+                <app-modalfavorit (updateFav)="updateFav($event)"  (updateWatchlist)="updateWatchlist($event)" [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+                </app-modalfavorit>    
+                    
+                
+              </div>
+              <!-- Series -->
+
+              <div  *ngFor="let item of watchedTv">
+                
+                <app-modalfavorit (updateFav)="updateFav($event)"  (updateWatchlist)="updateWatchlist($event)" [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+                </app-modalfavorit>
+                    
+                
+              </div>
+            
+              
+                </div>
+          </div>
+    </mat-tab>
+</mat-tab-group>
+ 
+

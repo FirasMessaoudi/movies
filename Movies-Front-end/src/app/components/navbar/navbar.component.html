@@ -1,0 +1,67 @@
+<mdb-navbar SideClass="navbar navbar-expand-xl navbar-dark black">
+        <mdb-navbar-brand>
+        <button style="cursor: pointer;background-color:  transparent; border: transparent" [routerLink]="['/home']">
+            <img src="assets/images/box.png" style="width: 40px;height: 100%;">
+        </button>
+        </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><span style="color:#333333;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="nav-item"><a></a></li>
+                <li class="nav-item"><a></a></li>
+                <li class="nav-item">
+                        <a class="nav-link waves-light" mdbWavesEffect [routerLink]="[ '/allProduct', Movies ]">
+                            <mat-icon>movie</mat-icon>   {{'App.Movies' | translate}}</a>
+                
+                    </li>
+                    <li class="nav-item">
+                            <a  class="nav-link waves-light" mdbWavesEffect [routerLink]="[ '/allProduct', Series ]">
+                                <mat-icon>tv</mat-icon>   {{'App.Series' | translate}}</a>
+                    
+                        </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" mdbWavesEffect  [routerLink]="['/upcomingmovies']">
+                            <mat-icon>local_cafe</mat-icon> {{'App.Upcoming' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                            <a  [routerLink]="['/Top_Rated']" class="nav-link waves-light" mdbWavesEffect >
+                                <mat-icon>star_rate</mat-icon> {{'App.Top_rated' | translate}}</a>
+                        </li>
+                    <li class="nav-item" *ngIf="isLoggedIn" >
+                        <a class="nav-link waves-light" [routerLink]="['/watchlist']" mdbWavesEffect>
+                            <mat-icon>list</mat-icon> {{'App.My-List' | translate}}</a>
+                    </li>
+                   
+                       <li class="nav-item">
+                        <a  class="nav-link waves-light" mdbWavesEffect [routerLink]="[ '/settings' ]">
+                            <mat-icon>info</mat-icon>    {{'App.About' | translate}}</a>
+                
+                    </li>
+           
+        </ul>
+        <form class="form-inline waves-light" mdbWavesEffect>
+                <div class="sdiv">
+                    <button [routerLink]="['/searchbykeyword',keyword]" class="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input  class="form-control stext" type="text" name="keyword" [(ngModel)] ="keyword" placeholder="{{'App.search' | translate}}">
+                </div>
+            </form>
+             
+              
+              <app-login></app-login>
+    </links>
+</mdb-navbar>
+<!-- <mdb-navbar SideClass="navbar navbar-expand-xl navbar-dark black">
+    <links>
+    <form class="mx-2 my-auto d-inline w-100 waves-light" mdbWavesEffect>
+        <div class="sdiv">
+            <button [routerLink]="['/searchbykeyword',keyword]" class="search">
+                <i class="fa fa-search"></i>
+            </button>
+            <input  class="form-control stext" type="text" name="keyword" [(ngModel)] ="keyword" placeholder="{{'App.search' | translate}}">
+        </div>
+    </form>
+</links>
+</mdb-navbar> -->

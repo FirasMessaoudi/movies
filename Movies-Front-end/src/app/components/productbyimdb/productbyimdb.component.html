@@ -1,0 +1,25 @@
+<app-page-not-found *ngIf="showError"></app-page-not-found>
+
+<div  *ngIf="!showError" style="padding: 20px;">
+<h2 style="color: #FFF;padding-top: 1%">{{'App.Top_rated' | translate}}</h2>
+<div class="spinner" *ngIf="isLoading">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+<div *ngIf="top_rated" class="items">
+  <div *ngFor="let item of top_rated?.results | paginate: { itemsPerPage: s, currentPage: p,totalItems : t }; let i = index">
+      <app-cardmovie [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+        </app-cardmovie>    
+    </div>
+  
+<div class="row justify-content-center">
+    <pagination-controls (pageChange)="changePage($event)"></pagination-controls>
+  </div>
+  </div>
+  </div>
+  

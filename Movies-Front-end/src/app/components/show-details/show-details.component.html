@@ -1,0 +1,25 @@
+<div class="md-form row w-100 d-flex justify-content-center">
+  <div class="col-sm-4 d-flex">
+<mat-select name="season" placeholder="Season 1" [(ngModel)]="seasonNumber" (selectionChange)="changeSeason($event.value)">
+  <mat-option *ngFor="let item of showDetail?.seasons" [value]="item.season_number">Season {{item.season_number}}</mat-option>
+</mat-select>
+
+<mat-select style="padding-left: 30%;" name="episodes" placeholder="Episode" [(ngModel)]="nbEpisodes" (selectionChange)="changeEpisode($event.value)">
+  <mat-option *ngFor="let item of episodeCount" [value]="item">Episode {{item}}</mat-option>
+</mat-select>
+</div>
+</div>
+<div class="card mt-3 border-0" style="width: 100%;background-color: #13151a">
+  <div class="row justify-content-center" style="width: 100%;text-align: center;padding-left: 2%">
+  <div class="card" style="width: 560px;margin: 10px;">
+    
+    <iframe [src]="link | safeUrl" width="560" height="315" class="card-img-top"  frameborder="0" allowfullscreen="true" scrolling="no"> 
+    </iframe>   
+
+    <div class="card-body">
+      <!-- <h5 class="card-title">{{showDetail.name}}</h5> -->
+     <!-- <p class="card-text">test</p> -->
+    </div>
+    </div>
+  </div>
+</div>

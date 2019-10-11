@@ -1,0 +1,440 @@
+<!-- <div style="padding-left: 50%;padding-top: 10%" *ngIf="isLoadingResults; else details"> -->
+  <!-- <ng-template #indicatorTemplate><i nz-icon type="loading" style="font-size: 24px;"></i>
+  </ng-template>
+  <nz-spin [nzIndicator]="indicatorTemplate">
+  </nz-spin>` -->
+  <app-page-not-found *ngIf="showError"></app-page-not-found>
+
+  <div class="spinner" *ngIf="isLoadingResults && !showError; else details">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+<!-- </div> -->
+  <ng-template #details>
+    <!-- Movie -->
+    <ng-container *ngIf="section == 'Movies' ; else serieDetails">
+        <div style="margin-top: 0px" class="movie">
+            <div class="movie--background">
+              
+                 <!-- <img class="image-rotator" style="height: 500px;" src={{product.cover}}> -->
+                 <div class="image-rotator" [ngStyle]="{'background-image': 'url('+'https://image.tmdb.org/t/p/original'+movieDetail.backdrop_path+')'}">
+                 </div>
+              
+              <div class="vignette"></div>
+            </div>
+            <div class="movie__head">
+              <button class="btn-back" (click)="back()">
+                <mat-icon>arrow_back</mat-icon>
+              </button>
+              <h2>{{movieDetail.title}} ({{movieDetail.release_date | date: 'y'}}) </h2>
+            </div>
+            <div class="movie__body">
+                <p class="movie--overview">{{movieDetail.overview}}</p>
+                <!-- <p *ngIf="lang==='fr'" class="movie--overview">{{product.descriptionFr}}</p>
+                <p *ngIf="lang==='ar'" class="movie--overview">{{product.descriptionAr}}</p> -->
+          
+              <div class="movie--infos">
+                <div>
+                  
+                    {{movieDetail.release_date | date: 'mediumDate'}}<span></span>
+                    |<span></span>{{movieDetail.runtime}} minutes<span></span>
+                    |<span></span>{{movieDetail?.production_countries[0]?.name}}<span></span>
+                    <!-- |<span></span>{{movieDetail.runtime}} minutes<span></span> -->
+                    |<span></span><span style="color: #fbb829;font-weight: 700;">Imdb</span> {{movieDetail.vote_average}}<br><br>
+                    <strong>{{'App.Box_office'| translate}}: {{movieDetail.revenue | currency}} </strong><br><br>
+                  </div>
+              </div>
+              
+              <div class="movie--genre">
+                <ul>
+                  <strong *ngIf="lang=='fr' || lang=='en'">{{'App.Genre' | translate}} </strong>
+                  <li *ngFor="let genre of movieDetail.genres">
+                    <a  style="color: #00acc1;" [routerLink]="['/allProductByCategory','Movies',genre.name,genre.id ]"> {{genre.name}}</a>
+                    <!-- <a *ngIf="lang=='fr'" style="color: #00acc1;" [routerLink]="['/allProductByCategory',genre.name ]"> {{genre.nameFr}}</a>
+                    <a *ngIf="lang=='ar'" style="color: #00acc1;" [routerLink]="['/allProductByCategory',genre.name ]"> {{genre.nameAr}}</a> -->
+          
+                  </li>
+                  <strong *ngIf="lang=='ar'">{{'App.Genre' | translate}} </strong>
+                </ul>
+              </div>
+              <div class="movie--genre">
+                <ul>
+                  <strong *ngIf="note==0">{{'App.Rate this' | translate}} </strong>
+                  <strong *ngIf="note>0">Rated:  </strong>
+                  <li>
+                   <!--  <ngb-rating [(rate)]="note" (rateChange)="rateMovie()"></ngb-rating> -->
+                   <bar-rating [(readOnly)]="!isLoggedIn" [(rate)]="note" (rateChange)="rateMovie($event)" [max]="5" [theme]="'fontawesome'"> </bar-rating>    
+                      </li>
+                <!-- <li>
+                          <star-rating [readOnly]="!isLoggedIn" [hoverEnabled]="true" (onClick)="rateMovie($event)" [size]="'medium'" [starType]="'svg'" [rating]="note"></star-rating>
+          
+                  </li> -->
+                </ul>
+              </div>
+             
+          
+            
+            <!--Actions-->
+            <div class=" movie--actions">
+                <button *ngIf="!existsInWatchList" matTooltip="Add to wachlist"
+                mat-button (click)="addOrDeleteWatchList()" >
+                  <mat-icon  class="mat-teal">add_box </mat-icon>&nbsp;{{'App.Watch List' | translate}} &nbsp;&nbsp;
+                </button>
+                <button *ngIf="existsInWatchList" matTooltip="Remove from wachlist"
+                mat-button (click)="addOrDeleteWatchList()" >
+                <mat-icon class="mat-red">remove </mat-icon>&nbsp;{{'App.Watch List' | translate}} &nbsp;&nbsp;
+                </button>
+                <button *ngIf="!existsInFav" matTooltip="Add to favorite"
+                mat-button (click)="addOrDeleteFavorite()">
+                  <mat-icon class="mat-red">favorite_border</mat-icon>&nbsp;{{'App.Favorite' | translate}}&nbsp;&nbsp;
+                </button>
+                <button *ngIf="existsInFav" matTooltip="Remove from favorite"
+                mat-button (click)="addOrDeleteFavorite()">
+                  <mat-icon class="mat-red">favorite</mat-icon>&nbsp;{{'App.Favorite' | translate}}&nbsp;&nbsp;
+                </button>
+                <button mat-button matTooltip="Share" (click)="openSm(content)" >
+                  <mat-icon class="mat-yellow">share</mat-icon>&nbsp;{{'App.Share' | translate}}
+                </button>
+              </div>
+            <!--Fin Actions-->
+            </div>
+            </div>
+            
+          <mat-tab-group class="movie__tab">
+            <mat-tab label="{{'App.Trailer' | translate}}">
+                <section class="movie--trailer" *ngIf="youtube">
+                    <iframe width="560" height="315" [src]="youtube | safeUrl" frameborder="0" allowfullscreen></iframe>
+                  </section>
+                  
+            </mat-tab>
+            <mat-tab label="{{'App.Cast' | translate}}" *ngIf="actors?.cast"> 
+            <!--Director-->
+            <br>
+            <h2>{{'App.Actors' | translate}}</h2>
+            
+                <div class="card mt-3 border-0" style="width: 100%;background-color: #13151a">
+                    <div class="row justify-content-center" style="width: 100%;text-align: center;padding-left: 2%">
+                    <div class="card" style="width: 18rem;margin: 10px;" *ngFor="let person of actors.cast">
+                      <a [routerLink]="['/actorworks',person.id ]">
+                      <img *ngIf="person.profile_path" class="card-img-top avatar" [src] =" 'https://image.tmdb.org/t/p/original'+person.profile_path "  alt="Card image cap">
+                      <img *ngIf="!person.profile_path" class="card-img-top avatar" src ="/assets/images/no_poster_available.jpg"  alt="Card image cap">  
+                    </a>
+                      <div class="card-body">
+                        <h5 class="card-title">{{person.name}}</h5>
+                        <p class="card-text">{{person.character}}</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <h2>{{'App.Crew' | translate}}</h2>
+                  <div class="card mt-3 border-0" style="width: 100%;background-color: #13151a">
+                      <div class="row justify-content-center" style="width: 100%;text-align: center;padding-left: 2%">
+                      <div class="card" style="width: 18rem;margin: 10px;" *ngFor="let person of actors.crew | paginate: { itemsPerPage: 6, currentPage: p}">
+                        <a [routerLink]="['/actorworks',person.id ]">
+                        <img *ngIf="person.profile_path" class="card-img-top avatar" [src] =" 'https://image.tmdb.org/t/p/original'+person.profile_path "  alt="Card image cap">
+                        <img *ngIf="!person.profile_path" class="card-img-top avatar" src ="/assets/images/no_poster_available.jpg"  alt="Card image cap">  
+                      </a>
+                        <div class="card-body">
+                          <h5 class="card-title">{{person.name}}</h5>
+                          <p class="card-text">{{person.job}}</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+            </mat-tab>
+            <!-- More like this-->
+            <mat-tab label="{{'App.More like this' | translate}}"> 
+             
+              <div class="row justify-content-center my-films" style="width: 100%;text-align: center;padding-left: 2%;">
+                  <div *ngFor="let item of similarProducts">
+                      <app-cardmovie [section]=" 'Movies' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+        
+                        </app-cardmovie>    
+                               <!--
+                      <app-cardmovie [id]="product.idProduct"  [image] = "'https://image.tmdb.org/t/p/w185/' + item.poster_path" [title] = "item.title" [dateRelease]="item.release_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+                        </app-cardmovie>-->
+                    </div>
+            
+              </div>
+              
+              </mat-tab>
+                        <!--streaming-->
+          
+              <mat-tab label="{{'App.Watch Now' | translate}}">
+                <section class="movie--trailer" >
+                    <iframe  width="560" height="400" [src]="link | safeUrl" frameborder="0" allowfullscreen></iframe>
+                   
+          
+                  </section>
+                  
+            </mat-tab>
+            <mat-tab label="{{'App.Reviews' | translate}}">
+                <section class=" justify-content-center" >
+                  <table>
+                    <tr *ngFor="let item of reviews">
+                      <td> <strong style="color:white;"> {{item.userNote.username}} </strong>
+                      </td>
+                      <td><bar-rating  [(readOnly)]="read" [(rate)]="item.note" [max]="5" [theme]="'fontawesome'"> </bar-rating>    
+                      </td>
+                    </tr>
+                  </table>
+          </section>
+              </mat-tab>
+              
+           
+          </mat-tab-group>
+          
+          <!--Modal Share-->
+          <ng-template #content let-modal>
+              <div class="modal-header">
+                <h4 class="modal-title" style="color:black">Share On</h4>
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+          <button shareButton="facebook" class="avatarfb" #fbBtn>
+          <i class="fa fa-facebook fa-lg white-text "> </i>
+          </button>
+          <button  shareButton="twitter" #twtBtn class="avatarfb twitter">
+          <i class="fa fa-twitter fa-lg white-text "> </i>
+          
+          </button>
+          <button  shareButton="linkedin" #inBtn class="avatarfb linkedin">
+          <i class="fa fa-linkedin fa-lg white-text "> </i>
+          
+          </button>
+          <button  shareButton="whatsapp" #wtsBtn class="avatarfb whatsapp">
+          <i class="fa fa-whatsapp fa-lg white-text "> </i>
+          
+          </button>
+          <a  href="https://plus.google.com/share?url=https://mymovies-430e3.firebaseapp.com/Movies/viewDetails/{{movieDetail.id}}"
+          onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+          <button  class="avatarfb google " >
+          <i class="fa fa-google-plus fa-lg white-text "> </i>
+          </button>
+          </a>
+          </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+              </div>
+          </ng-template>
+    </ng-container>
+    <!-- End Movie -->
+
+<!-- TV -->
+<ng-template #serieDetails>
+    <div style="margin-top: 0px" class="movie">
+        <div class="movie--background">
+          
+             <!-- <img class="image-rotator" style="height: 500px;" src={{product.cover}}> -->
+             <div class="image-rotator" [ngStyle]="{'background-image': 'url('+'https://image.tmdb.org/t/p/original'+showDetail.backdrop_path+')'}">
+             </div>
+          
+          <div class="vignette"></div>
+        </div>
+        <div class="movie__head">
+          <button class="btn-back" (click)="back()">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+          <h2>{{showDetail.name}} ({{showDetail.first_air_date | date: 'y'}}) </h2>
+        </div>
+        <div class="movie__body">
+            <p class="movie--overview">{{showDetail.overview}}</p>
+            <!-- <p *ngIf="lang==='fr'" class="movie--overview">{{product.descriptionFr}}</p>
+            <p *ngIf="lang==='ar'" class="movie--overview">{{product.descriptionAr}}</p> -->
+      
+          <div class="movie--infos">
+            <div>
+              
+                {{showDetail.first_air_date | date: 'mediumDate'}}<span></span>
+                |<span></span>{{showDetail?.episode_run_time[0]}} minutes<span></span>
+                |<span></span>{{showDetail?.origin_country[0]}}<span></span>
+                |<span></span><span style="color: #fbb829;font-weight: 700;">Imdb</span> {{showDetail.vote_average}}<br><br>
+              </div>
+          </div>
+          <div class="movie--genre">
+            <ul>
+              <strong *ngIf="lang=='fr' || lang=='en'">{{'App.Genre' | translate}} </strong>
+              <li *ngFor="let genre of showDetail.genres">
+                <a  style="color: #00acc1;" [routerLink]="['/allProductByCategory','Series',genre.name,genre.id ]"> {{genre.name}}</a>
+                <!-- <a *ngIf="lang=='fr'" style="color: #00acc1;" [routerLink]="['/allProductByCategory',genre.name ]"> {{genre.nameFr}}</a>
+                <a *ngIf="lang=='ar'" style="color: #00acc1;" [routerLink]="['/allProductByCategory',genre.name ]"> {{genre.nameAr}}</a> -->
+      
+              </li>
+              <strong *ngIf="lang=='ar'">{{'App.Genre' | translate}} </strong>
+            </ul>
+          </div>
+          <div class="movie--genre">
+            <ul>
+              <strong *ngIf="note==0">{{'App.Rate this' | translate}} </strong>
+              <strong *ngIf="note>0">Rated:  </strong>
+              <li>
+               <!--  <ngb-rating [(rate)]="note" (rateChange)="rateMovie()"></ngb-rating> -->
+               <bar-rating [(readOnly)]="!isLoggedIn" [(rate)]="note" (rateChange)="rateMovie($event)" [max]="5" [theme]="'fontawesome'"> </bar-rating>    
+                  </li>
+            <!-- <li>
+                      <star-rating [readOnly]="!isLoggedIn" [hoverEnabled]="true" (onClick)="rateMovie($event)" [size]="'medium'" [starType]="'svg'" [rating]="note"></star-rating>
+      
+              </li> -->
+            </ul>
+          </div>
+         
+      
+        
+        <!--Actions-->
+         <!--Actions-->
+         <div class=" movie--actions">
+          <button *ngIf="!existsInWatchList" matTooltip="Add to wachlist"
+          mat-button (click)="addOrDeleteWatchList()" >
+            <mat-icon  class="mat-teal">add_box </mat-icon>&nbsp;{{'App.Watch List' | translate}} &nbsp;&nbsp;
+          </button>
+          <button *ngIf="existsInWatchList" matTooltip="Remove from wachlist"
+          mat-button (click)="addOrDeleteWatchList()" >
+          <mat-icon class="mat-red">remove </mat-icon>&nbsp;{{'App.Watch List' | translate}} &nbsp;&nbsp;
+          </button>
+          <button *ngIf="!existsInFav" matTooltip="Add to favorite"
+          mat-button (click)="addOrDeleteFavorite()">
+            <mat-icon class="mat-red">favorite_border</mat-icon>&nbsp;{{'App.Favorite' | translate}}&nbsp;&nbsp;
+          </button>
+          <button *ngIf="existsInFav" matTooltip="Remove from favorite"
+          mat-button (click)="addOrDeleteFavorite()">
+            <mat-icon class="mat-red">favorite</mat-icon>&nbsp;{{'App.Favorite' | translate}}&nbsp;&nbsp;
+          </button>
+          <button mat-button matTooltip="Share" (click)="openSm(content)" >
+            <mat-icon class="mat-yellow">share</mat-icon>&nbsp;{{'App.Share' | translate}}
+          </button>
+        </div>
+      <!--Fin Actions-->
+        </div>
+        </div>
+        
+      <mat-tab-group class="movie__tab">
+        <mat-tab label="{{'App.Trailer' | translate}}">
+            <section class="movie--trailer" *ngIf="youtube">
+                <iframe width="560" height="315" [src]="youtube | safeUrl" frameborder="0" allowfullscreen></iframe>
+              </section>
+              
+        </mat-tab>
+        <mat-tab label="{{'App.Cast' | translate}}" *ngIf="actors?.cast"> 
+        <!--Director-->
+        <br>
+        <h2>{{'App.Actors' | translate}}</h2>
+        
+            <div class="card mt-3 border-0" style="width: 100%;background-color: #13151a">
+                <div class="row justify-content-center" style="width: 100%;text-align: center;padding-left: 2%">
+                <div class="card" style="width: 18rem;margin: 10px;" *ngFor="let person of actors.cast">
+                  <a [routerLink]="['/actorworks',person.id ]">
+                  <img *ngIf="person.profile_path" class="card-img-top avatar" [src] =" 'https://image.tmdb.org/t/p/original'+person.profile_path "  alt="Card image cap">
+                  <img *ngIf="!person.profile_path" class="card-img-top avatar" src ="/assets/images/no_poster_available.jpg"  alt="Card image cap">  
+                </a>
+                  <div class="card-body">
+                    <h5 class="card-title">{{person.name}}</h5>
+                    <p class="card-text">{{person.character}}</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h2>{{'App.Crew' | translate}}</h2>
+              <div class="card mt-3 border-0" style="width: 100%;background-color: #13151a">
+                  <div class="row justify-content-center" style="width: 100%;text-align: center;padding-left: 2%">
+                  <div class="card" style="width: 18rem;margin: 10px;" *ngFor="let person of actors.crew | paginate: { itemsPerPage: 6, currentPage: p}">
+                    <a [routerLink]="['/actorworks',person.id ]">
+                    <img *ngIf="person.profile_path" class="card-img-top avatar" [src] =" 'https://image.tmdb.org/t/p/original'+person.profile_path "  alt="Card image cap">
+                    <img *ngIf="!person.profile_path" class="card-img-top avatar" src ="/assets/images/no_poster_available.jpg"  alt="Card image cap">  
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">{{person.name}}</h5>
+                      <p class="card-text">{{person.job}}</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                
+        </mat-tab>
+        <!-- More like this-->
+        <mat-tab label="{{'App.More like this' | translate}}"> 
+            <div class="row justify-content-center my-films" style="width: 100%;text-align: center;padding-left: 2%;">
+
+              <div *ngFor="let item of similarProducts">
+                  <app-cardmovie [section]= " 'Series' " [id] ="item.id" [image] = "item.poster_path" [title] = "item.name" [dateRelease]="item.first_air_date" [note] = "item.vote_average" [numbervisits] = "item.popularity">
+       
+                    </app-cardmovie>
+                </div>
+            </div>
+           
+      
+          
+          </mat-tab>
+                    <!--streaming-->
+      
+          <mat-tab label="{{'App.Watch Now' | translate}}">
+            <section class="movie--trailer" >
+            
+                <app-show-details [idtmdb]="showDetail.id"></app-show-details>
+                
+      
+              </section>
+              
+        </mat-tab>
+        <mat-tab label="{{'App.Reviews' | translate}}">
+            <section class=" justify-content-center" >
+              <table>
+                <tr *ngFor="let item of reviews">
+                  <td> <strong style="color:white;"> {{item.userNote.username}} </strong>
+                  </td>
+                  <td><bar-rating  [(readOnly)]="read" [(rate)]="item.note" [max]="5" [theme]="'fontawesome'"> </bar-rating>    
+                  </td>
+                </tr>
+              </table>
+      </section>
+          </mat-tab>
+          
+       
+      </mat-tab-group>
+      
+      <!--Modal Share-->
+      <ng-template #content let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" style="color:black">Share On</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+      <button shareButton="facebook" class="avatarfb" #fbBtn>
+      <i class="fa fa-facebook fa-lg white-text "> </i>
+      </button>
+      <button  shareButton="twitter" #twtBtn class="avatarfb twitter">
+      <i class="fa fa-twitter fa-lg white-text "> </i>
+      
+      </button>
+      <button  shareButton="linkedin" #inBtn class="avatarfb linkedin">
+      <i class="fa fa-linkedin fa-lg white-text "> </i>
+      
+      </button>
+      <button  shareButton="whatsapp" #wtsBtn class="avatarfb whatsapp">
+      <i class="fa fa-whatsapp fa-lg white-text "> </i>
+      
+      </button>
+      <a  href="https://plus.google.com/share?url=https://mymovies-430e3.firebaseapp.com/Series/viewDetails/{{showDetail.id}}"
+      onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+      <button  class="avatarfb google " >
+      <i class="fa fa-google-plus fa-lg white-text "> </i>
+      </button>
+      </a>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+          </div>
+      </ng-template>
+</ng-template>
+
+<!-- End TV -->
+</ng-template>
