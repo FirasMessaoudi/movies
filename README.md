@@ -43,6 +43,7 @@ that's why we enjoyed defining a lot of reusable components as we can see :
 	*  **Navbar Component**
 	* **Footer Component**
 	* **MovieCard**
+        <img src ="https://github.com/FirasMessaoudi/movies/blob/master/cardmovie.PNG?raw=true"> <br>
 	* **MovieRating**
 	* **Contact Component**
 	* **ActorComponent**
