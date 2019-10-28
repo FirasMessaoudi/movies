@@ -43,7 +43,8 @@ that's why we enjoyed defining a lot of reusable components as we can see :
 	*  **Navbar Component**
 	* **Footer Component**
 	* **MovieCard**
-        <img src ="https://previews.dropbox.com/p/thumb/AAnYg7HSMmBkKVkNL9ps8TmMOsQy60r7AEQRx3zxgQJdc-V4FJAi34z2BtuJitUQvlnxrqg38Q_mUDshC5Cko5QkpxuQXSo2IaVl3Ri_-bcC8am6njGpCSfhSeC7bTxtQuZe8xvkOE5cwiLweii4H9nVXUmbG2OyTHYi-v71654PtkRc6AjXK6rGhUVizp4fTydrCQDoKu0aJ5Se9vFin3IE65NyEyLxbz6Na-6nkWT5VbluSUPsKhzxYZ6WA54nf6itXIncYlW-S3ezTUn3TxQx3rAdN5p2kVNsN5TqOtYIO3DQYoGMyjgxVjZVtvjNO-VZf8qfv-Ke4n8pA2Z5o-qS/p.png?size=1600x1200&size_mode=3"> <br>
+        <img src ="https://lh3.googleusercontent.com/tfuXM0USiWmKA6r6sTPi-     -2ZZ40kq1QrAhChhKXuqADB3dUWsaSM0A18_wG1KWb2EE5pJdeRBjaX5gRSfa9R2YFMMYYL0YG40AE9O2lJNMSwSUqVY0nigjw31Iwiq-wzlLgDtVYVe9e1WJJ3k7nQbTr6Wc_K9L2-2aCVyUOWbQWQqGp8mcai23KdVnQFgXa8N7wNQAzUKMF42M3uX92lV_vMYFdzAqWLiTJ5k9qjdoYmpkSvjV2-N1psiu-zg-Nz2wWYEA9GvAh3_LClUGFghgB6gHzpXEVPI79CYFufbteARZYfzV9GoxEdCZ_p_vunXN3RGWTqHSu6bNS5kJjuhPWyAndS57gh_xYE4bFTU7lmVWvPTsPHEe3-YVKp2BQjk181G15L_gswugc6ISqVf3rkPiWpemY95KAV3VadfN57hgMtkViYaHOIpcnEcxmYbQ_9ifvjw46WN5AW4ro8CBE1WWp_xthUIMV6HwUAha4qQ8HGiZ_0OQarw5tICP-rE_5bsQp3FtAiWtPlcXgViRCYQUoQ8IoaCBflZ1y1INXkJYIOer6POB0YuHOh5g4hQoXVJ_QIfEuSGFFCnT54Clk3RNyURuQIz1XmRPfhYwOhjGiKk1ymSFGZPcpDu-dTD0fxWuWXZEhaU50Z6hbFWN-wNPjjSCvRMVvghbmfJTD0DdapHMCnhA=w1327-h356-no">
+	<br>
 	* **MovieRating**
 	* **Contact Component**
 	* **ActorComponent**
