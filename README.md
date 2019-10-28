@@ -113,7 +113,8 @@ The translation is implemented using the Ngx Translate : The i18 N library for a
 * Open the folder Back-end with your favorite Java IDE ( I recommand IntellinJ IDE ) 
 	*  > You need to set up Lombok in your IDE before running the project.
 	        Go To File->Settings->plugins->search for lombok plugin then click install and restart you ide.
-	        Congrats you have lombok intsalled on your ide.
+	        Congrats you have lombok intsalled on your ide. <br>
+	<img src ="https://lh3.googleusercontent.com/fwnZVr2_Qr7lKICOPh0DqofBys6PGz48TWSKCo4gP6C-dMyu_QPccl5BZ1UhHKkWj1TzksQGGzAhcufV8zIbMPUTO8u00uQifq04a-4oskGpLSVXljb3UsMZwQ0HAivaRt-B6z1IDFs0kasZM2LD-AMRFox5xGQS2nq9tpFIzeIbIVI5xapXvlHx-q-giX2m-CfNt0SXHfJlsK4_x8QVZHBnTyyKitBnjOV3q_LeAzyMoURY2Sunr3IRPV0j77S8yjixsBuNYo9ZzaD-D7zu-ZkNyEAT4vwokCFK1kFPAq8opX7xqqWabYsEaJwoL5JF_huBxJOwvjZ2-gPfc4W5qbC2W-n2laJQIWXBDlGdo6BjYoCH1To-iia9IhPI64KWoaDwFWwc810HsX6n5v7WtFY_uN6eKxACpeWfT9FVcWjRaKXod8HtbSo2e65FBiaNUaVc0RqbnXTGh_qf5GOYhnTDpVP_8FKVzO6o-fKazdbsXic8pASaoFd_US9sag-j2WWgr35dV31wR1cNaf_EErHRjjRUxHDVgcK94gV-l2qkP7JOLPlJPVEgfar2nOk3QbQJNvptaGzDmkBqB7cq60cPJACupnd7aRCdZycQmg4-7DH9RWnrFjjlcuaxRFK8qhYN_nZlCOBMZY28ORIMQV0-ZMjLtFL1rfCGPZa9Br2EsCfvfI31xA=w1253-h657-no">	<br>
 
  
 * Configure your environments Variables  as bellow
