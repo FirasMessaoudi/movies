@@ -114,9 +114,8 @@ The translation is implemented using the Ngx Translate : The i18 N library for a
 * Open the folder Back-end with your favorite Java IDE ( I recommand IntellinJ IDE ) 
 	*  > You need to set up Lombok in your IDE before running the project.
 	        Go To File->Settings->plugins->search for lombok plugin then click install and restart you ide.
-	        Congrats you have lombok intsalled on your ide. <br>
-		
-<img src ="https://lh3.googleusercontent.com/fwnZVr2_Qr7lKICOPh0DqofBys6PGz48TWSKCo4gP6C-dMyu_QPccl5BZ1UhHKkWj1TzksQGGzAhcufV8zIbMPUTO8u00uQifq04a-4oskGpLSVXljb3UsMZwQ0HAivaRt-B6z1IDFs0kasZM2LD-AMRFox5xGQS2nq9tpFIzeIbIVI5xapXvlHx-q-giX2m-CfNt0SXHfJlsK4_x8QVZHBnTyyKitBnjOV3q_LeAzyMoURY2Sunr3IRPV0j77S8yjixsBuNYo9ZzaD-D7zu-ZkNyEAT4vwokCFK1kFPAq8opX7xqqWabYsEaJwoL5JF_huBxJOwvjZ2-gPfc4W5qbC2W-n2laJQIWXBDlGdo6BjYoCH1To-iia9IhPI64KWoaDwFWwc810HsX6n5v7WtFY_uN6eKxACpeWfT9FVcWjRaKXod8HtbSo2e65FBiaNUaVc0RqbnXTGh_qf5GOYhnTDpVP_8FKVzO6o-fKazdbsXic8pASaoFd_US9sag-j2WWgr35dV31wR1cNaf_EErHRjjRUxHDVgcK94gV-l2qkP7JOLPlJPVEgfar2nOk3QbQJNvptaGzDmkBqB7cq60cPJACupnd7aRCdZycQmg4-7DH9RWnrFjjlcuaxRFK8qhYN_nZlCOBMZY28ORIMQV0-ZMjLtFL1rfCGPZa9Br2EsCfvfI31xA=w1253-h657-no">	<br>
+	        Congrats you have lombok intsalled on your ide.
+        <img src ="https://lh3.googleusercontent.com/laeYF5CAMTsWfBn4ocdVp7qPbgRcGNdGXAeyKAAHZWpjpT484vW6XUph9497autYuBRa06QqxMDnuxpwbChUbuZre21kMosJHBBRo4e6TizlHU1ZJFQm9n_T0L6ZkplqlNfZncFZzXRU2qUcgb7lCMkUwRy8MUdPWJz39wEJhTCc3KS5PGbj5LAJB8x7sY7xmZm3OIqkG4cRnQChSTNjG1VQjmQ56QaGGiNv1-swqrdWksW_t0zlIDY5-q4I9uN_VHioiMi2674IbQl9exoDMwQ6tGaO-DQrAu4x-9EPm09rW8NPC8rv7pOA66XexWvZdGfMx3407JyYA4xrvdTd9cYinNw4G-4GPz0l00lig3u8qf-tjeEd-AQwAJAco3uh1p9YdsLhI99wu_6DiueHH2rKI2wiM-nd8p9rwr08AK5rUbR1IhzouLWKeMPFB7oGs-tAPIkHXKwtPZdl9-HVjzNaO-KhvsTnJOK3-onoVJ-tnNje_3giMN0u7EXkIIgOjopuIHf4QL5V5dF1h-3CR13qrwOKyB7nOqdgklKq6Qnmja6ywjPSV1ThPfyVAEEuBIcIpddrMhyftIKDLlaBPnUyghmiFtFMKUEfc8AQSjkCTkFwVNXH-0jOjO49yDOQIYDPIKh0K89gfZ5gYxoZdHA8-TZu-l9mQ96pXdZVO1wi6U2A6oWnjQ=w1253-h657-no"> <br>
 
  
 * Configure your environments Variables  as bellow
