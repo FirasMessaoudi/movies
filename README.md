@@ -127,7 +127,7 @@ The translation is implemented using the Ngx Translate : The i18 N library for a
 	
 * Now run your app as spring boot application and if everything goes well your back will start successfully.
 </br>
-	
+<img src="https://lh3.googleusercontent.com/P6VRS-RVGPyDsn281yfnKsAlDEOdiy2l5Z5MxXOSmcG78MOj1wREoy7wWxjqnbhkbsfUpIODKFH5lWdeVhUo2rhicDTNsInA13XvLGG34Adm9guncpncUKePE6JuiH1UOy9xsYhqfEaKHvflLhnyRPWx63jmq-poB3vYAdZnyL12iWAX51yktco_IBUx_o5BCP5oGMAYArAOVOUSrTMuWAwR40FrMVg6XoEHDLFZA1-SRnSGU_CyHjMDmuIaYvpSFj3zMF5qj0XebJTC0Y5_F7i5cnQWBgX-GbubC30cgDh-AUksPoN136oehxPlh3MG-XJwSSXTx8tKoUyDHJYa7oIg-cWGNn--EbBUmNQodCDhENo615M8ImmbZGrq-aNUioNsDKPjezG_64Wj9qhTfXVU19RwjxaNvqSzPcPCeuR314ZirjvT_AVuen8QFlWjHWjr7-tke--iUfU0s0uqKA4Dw3DI7Iay4VjdvS_D7HunH_JJtLcvrCFL4b8R2iSshgnQMJ5XYMdsTQTk23wmydqDTbSuFpUUP_twylk8U1gaSZgryCqxGjZ5XbRmHuUjBhjdlDcJ09aTr8CxTP74o9J7PLgXo9VPuNZLf13exAdoscdvscYTBz4QieCPwZVGT33-QbIZnhslGxnx_jx_2vAxqK3AI6Ean9gcqdRiS5yPPsSXq0kekw=w1257-h657-no"> <br>
 	
 
 ### Front-End ( Angular )
@@ -144,14 +144,14 @@ Start the angular project
     ng serve 
 
 Verify the file 'src/environments/environment.ts '
-The default port i'm using is **8084** the port and the **apiBaseUrl** should match your back-end url.
-
+The default port i'm using is **8084** the port and the **apiBaseUrl** should match your back-end url. <br>
+<img src="https://lh3.googleusercontent.com/zB491tUlqLinUyaTZiYWJlIpcQJG5VBmZiyRSHbuQ2ReFaJiZBU9wlbf44nmjGw-fHiCLT1Cuk90GH5pIYa9piEVyVpoCItw81HmJuzYhvQCn7aYJ3ADx7-otE_GIla8BbBIJP69jPlPAucx3PyymQNj9DRTs3heJCKC7fv43u3So0kCXpJaqhrs4NrZVbrGHpfSz0wiERvhfT9BuMkJycTc7ZsukOQZcbMUS6c46SSmiMp-VvocdE7IUbPCKfO1mwcCnA-SOR2I_5zLN8rdI4M5qqhwdWBcAJCluZqV3N_PtxttFJF_Dwa77_BP1OFMe-0fAyoURUmscSUd_RL4GYNMSLezZdeYnzmDV5UwELshPFsBleeJj05C1ET9NJel8xJeu6tL3d1eKtagxPkWUM2DaZviRCTcRdvg9MjSHIeZxKwEQOBfFcVpjPyyAyuACxGAfRjV25lIFG4OrwGXnDNgnJ6obqle7LOgIgC14C8_paVEPX0RPPebw7S_JyrQginVj_otKkvxClYsodv77GPfkSHP-mnDZ8K4diKC-1kHxsV5kv7w0__FLYguBb0mPe_snCcalCfpamnawN6R5YkGj4-XD1dVnjABhGcZdyyI3LsysgGU_fAs_CW0moOrTOhpt_xC7aZDaH0uniwzMb4sKyBprYfFGiXni66WqEiiAPjovkPAiw=w829-h455-no"> <br>
 
 
  
  ### Congrats 👏 🎉 
 **If everything went well you can start enjoying Movies Box and explore it's best features❤️** 
-
+<img src ="https://lh3.googleusercontent.com/9sfi2yz1lizAaC-FB3_5Y9H_HN0UlzjQ97zTXn96fVZA6npI-VqS2tPzWHvFbi-2IUEqf9DrmHnCiUrXArH_MgKXmjudKgCqfbr4q2D1re14bzCe8KfrLDsjuALKtRIpF4p6wI3FAnNthkiIwMA9tXEZcAzlEg1BzEUl6b-UFloQqvo8tJLtYukmUmOjuYhbiPglNQT5-jXSfrRLKiq4yIFHLChGtj6t3KlsGIlZZ7UkUw_uomArMog8T6b3nJtNacpCHiJ1J2mTa1fP4ksST1-II93Aof35KQEU_OqMRivf_hOfjUAC8nThln_HHuhYnTLcwf6zaO7gTj033ytfAZsCcfNuMNT0TGTgEzpOPUiPrrMiUvICQWpJU5kbiuYEene5zL8dSABdSfu3C9jVWihr8dP_MBlHv_EiTmrmb5h66jai7EnvDoUZk8JGxV1aWHVMRawthhXf_CMxrv682WOTGflEILXcXwSYsa9fQ9GGNrTmvOm7gpPhvUQ7OaRFDDrl1IRe62bg7a7MsWmjw1Yky-wzc7YDjUo5dGIPkBH9qsq4wacuJyJLAjkxqr6BBh6tWeW_8PXLqbGjG0EFwzYhV91v96ElnzgsKNMh57pZVUY090uM_AiWzO348cY1H27Ac4Hrr7k1sc4f_EAgv5mHgdmTY5wDmLmIyrNcTtHOswxM3AK1yw=w1366-h653-no"> <br>
 
 ## Deployement
 In this bonus section we're gonna see how we can deploy our full stack application on heroku (Back end ) and firebase hosting (front end).
@@ -176,7 +176,9 @@ In this bonus section we're gonna see how we can deploy our full stack applicati
 
      All that said, the application is now deployed. You can visit the app’s URL by running this command:
      `heroku open`
-    
+     
+     <img src="https://lh3.googleusercontent.com/aYQRz-eKNbju_z9HyW1nMNeHtl3WBfyEO3yha9btGLOb5wk6gqbt3viHCOdjoq1B-7SlhMLSvY7MRF-nXJVmbLm61KcYuGMW5Le9TK0OGAAnIGr1skkrjCS04vylyYexOvzloXKkQBqXDjbK8LbpAXzt3xucrpgcOr5oAqIJzMe_t_zXQX5MnZLXTw97k7g2xtcTwTqAWoMQNDH-e3yOru6SO2CFUMcRGHuWuTMFvGCpdz0epVJiyU70BqBeZQ3HV49yqrbkj6_SuAfiiDEWrjVG6YpVVVJLSuK9_N3Gsl9KCCWozdeNSid64vn09l8gEwa2eXur-GIVMcvRpuaG_tey5Cx8zY-caSUUlYbGbj66pRcll_rqk_BiGdEjnwuO2cGgoZXEsOKX8XOKfJpFnEmI88h30v3ZV3RC87tGVlKOJvCATax1AdL4NjVglxunnDYIkZgML0RaSahwKWiOiM90b6vsyFKVv0HXe0T7aAd181vRnftBKa58sNNL5NLeY2XL-C3m9aCV9pfaNmUV3yg-uXyPF65d9YBA2xwxaJO4moig4W4V0YaNzd_CaQ0xfYreE6JtZCJAZh8WXVdMZ1D0Xsd2KJg8Cs8WhFPloGfmJn6fuaWHsLtrrQ8sXBWCs7o05nxlBLf4x3PkWphvoT0fHWvWoZg0FEp_7f3cJZyC5m_uhy41UA=w1366-h548-no"> <br>
+     
      * #### Connecting to database ####
         As we said before , the reason why we choose postgres databse is that we can easily attach it to our app by running the following command :
         `heroku addons:create heroku-postgresql`
@@ -189,7 +191,8 @@ In this bonus section we're gonna see how we can deploy our full stack applicati
 * ### Front end ###
   Now as our back end is successfully deployed on heroku , we will deploy our front end using angular firebase hosting .
   * **Configure environment.prod.ts**
-  copy your heroku app name into the apiBaseUrl in the environment.prod.ts file to connect your angular firebase app to the back end deployed on heroku.
+  copy your heroku app name into the apiBaseUrl in the environment.prod.ts file to connect your angular firebase app to the back end deployed on heroku. <br>
+  <img src ="https://lh3.googleusercontent.com/7tPcY95UQtFv0IvxLX-PjKvZIDIrX1qBi7MVR6cFDNq4iXeR6vtIhZYSvdrM5FuG5xYOu8NARbT9BN3RG1LRyOSR5_z8CuxKXEm_DtvbBAt-Y3ONmlaZu71WHgn9NyBBVrdTWoL19wsc6oieGKy2s68U_gjqMZT8nZnUcS-ocumfbzpS7PAfbB6F46SC6npARrkdfha1sYQu9ZITs9r87EQChrcqIHRXIPCCeFtUydZqo2v2cWtWUxAwVARufmaaR9r669AGZ3tm0-SeP-pnmMu74gYucs24FFmskzOy8eksycFOA_wAo4TJ4im3VFTEP2LIMoPWPV_Qrgg1Tr3K-aXa_Dh0DJXuOo12XlcdgQdO1gh-uqVG_xxxrGKRXGNBl1ppLfzQB0F68JA8oypGDKdVmtoDlZXpVjR8LTV8ZLkjfQJUFzWHwcgdt1BRkamM0-elBJtIWAz9Yaoi0-x0KwyBB1oxNYOaHyw2ZqZctRsUUDWdFda17M9AMQm-aijZnhftVuLe7WOAOvCgGfFNhPH0Sqnc9qwqYtg9PDqoCSjSuUvzn9_-CJ50Rr_WpzoEnLXZ2_cRLEBYQr05qbo3jQbYaVgTqpGVZGvXzW8e9bc9JSjxb3LAx5ZZUvabC6zx4HI4Benxze44t-d0tqcX3BeEawVm9mbfgREZJYDDCq6NoePHihKpoA=w946-h250-no"> <br>
 
   * **Building the Production Code**
   `ng build --prod`
@@ -201,7 +204,7 @@ In this bonus section we're gonna see how we can deploy our full stack applicati
   * **initilize**
   This will create a firebase.json file to use during the deployment of your application. Run:
   `firebase init`
- 
+  <img src="https://lh3.googleusercontent.com/2dEA7Fz4N_m07UCRClAzu8auI54P8VQW47EUoiruEFkpSrkYRNEcxyrq-XY6k43OVPHvDbF2GTSlXQy6Z5r8t5p_PSRs5T0PiI9g9WzR6h5V902sRGeEtE6JeO9SjFFeJy3yDhLeWUM8JczDgeAbVza5Iy0Z-FP9hL_D8za4gMRZ6xZsao7HClj845GtGcYB2xVE0fXY_a2P9ImhSmdXqb3rtAxLrCiBl0x6NLo2HxtD8w6uF6TDkgX2CWLCUzMK5-nGvxqCNFchpSlhkgnoFqYiMj-kKQoNGXX2264coSay3zCsHtzz7djY5oImtwAt4W6w1hzpMyteOaDIlJCxm11dMojcpJkJMtiEaZb1s0KUHwITEFQd_Y0h3nryA1oO42OxcWqHKBxWBYTS9wWHTVIdODmK-KCWqg6sLBd6_PNo6qvCqFheVHLWYJajk_nqdmH07WazH06rFXoh4BhoTY2hfntZ5tB0LSza1vDomcOzt_VInlW1Yil7fU3cQDVLWl1QmiQH5yVY3-qgCB9oxmQnsMVRPXTyVT1J_Lp3l1rZJ34gr9IovkAGMcOHWEUuzWTkRsYs8b6ax_p-OgaSaFi65M7bZMJkW6TuV8WcLea0V1g-1KHhnr7a_DcD5JNoMeHKmfZ2tuM47NrfRXbqcmPDU2e0Z4T2_dAGy3LZiG6IF0yMHFbIQg=w567-h142-no"> <br>
   For the most part, you can stick with the default settings, except for the following questions:
       *  Are you readey to proceed ? yes
       * Which firebase cli would you choose to setup ..? Hosting (third option)
@@ -210,7 +213,8 @@ In this bonus section we're gonna see how we can deploy our full stack applicati
   * **Deploy**
   Finally, deploy the app.
   `firebase deploy`
-  if all went well a link to your app will be generated on the console and your app is successfully deployed 
+  if all went well a link to your app will be generated on the console and your app is successfully deployed  <br>
+  <img src ="https://lh3.googleusercontent.com/vKuCFcyEPCZDlF6iO2wYFjHK0F3SauaFCybbYcBO7M4zRIOsfDuXRwVpu72nrxkuBuRTk6hT1nQ7nI7UVpacEZajkE5jjVX1q0EaLzqWSlWoD739dfah8vqrd7GvIHugmQkkE8EeRw6gLgdcpMMcf5yBHmNb_X6agHkfGpRhLmP5T9QZ-bk88DoMczNhv7l7uZaVrW1NLjcDumbNtM8Tg9eypOdXljYCNOoxKRvGkLTgxbM3nb4qOXApISBRdUBTfsBTXzMD5QdbzQd04y1x4hHh_NsFwO1itgSa0RQP4uN9pnRJMKLJIGDits96dsDrprJF6uURappXqhdod2BWBQLArIAvKsAVOedOAWIsHU0cJRqn1fUHRxktY26LJT1E9B7kuF3JbZ5shYTjTetb366Kxt_JwgP_9ge75ephACSFlOYtIxq2RzkW2jvPioFiaAKzi4EFc782OXINQ9q_LhuEwhI0QbbLqSaxG7fWBHbH-Q3IG16XKjSY-R_X4w7qVVa3PiGRR8bPDWMeG6XU6es7fE5KIpSU8AkNRMmv9Rj8RjGL11Sr6MVjMoWkCuYntcBSXFDpF_icrwORZ-FOSo87uArzHpPQd50B-PQMtJCc6ULIpiENnUNtWhc6uwCoDoeapESRl440Mbw3QgzsmZJh3Caz-kmX26mCcxvY1DYd2CCj-91KPQ=w1279-h657-no"> <br>
  
 ## Creator 
 
