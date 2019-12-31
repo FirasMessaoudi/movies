@@ -30,6 +30,7 @@ export class WatchlistComponent implements OnInit {
   movieUser: IMovieUserId;
   user: IUser;
   username:string;
+  isLoggedIn: boolean;
   // tslint:disable-next-line:max-line-length
   constructor(private tokenStorage: TokenStorageService,private service: UserService, private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
     this.router.routeReuseStrategy.shouldReuseRoute = function() {
@@ -38,20 +39,28 @@ export class WatchlistComponent implements OnInit {
   }
 
   ngOnInit() {
-    if(this.tokenStorage.getToken()){
-    this.username=this.tokenStorage.getUsername();
+    this.tokenStorage.currentStatus.subscribe(status => {
+      this.isLoggedIn = status;
+      if(this.isLoggedIn){
+        this.username=this.tokenStorage.getUsername();
     
-    this.service.getUser(this.username).subscribe(
-      res => this.user = res,
-      err => console.log(this.user.email),
-      () => {
-       
-       this.getWatchList();
-       this.getFavoris();
-
+        this.service.getUser(this.username).subscribe(
+          res => this.user = res,
+          err => console.log(this.user.email),
+          () => {
+           
+           this.getWatchList();
+           this.getFavoris();
+    
+          }
+        );
+      } else {
+        this.router.navigate(['/not-found']);
       }
-    );
-    }
+    })
+    
+  
+    
   
 }
 updateFav($event){

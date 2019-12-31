@@ -4,6 +4,7 @@ import io.swagger.annotations.*;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tn.sesame.dto.JwtResponse;
 import tn.sesame.dto.UserLogin;
@@ -25,7 +26,7 @@ public class AuthController {
     @ApiResponses(value = {//
             @ApiResponse(code = 400, message = "Something went wrong"), //
             @ApiResponse(code = 422, message = "Invalid username/password supplied")})
-    public JwtResponse login(@RequestBody UserLogin user) {
+    public ResponseEntity<?> login(@RequestBody UserLogin user) {
         return userService.signin(user.getUsername(), user.getPassword());
     }
 

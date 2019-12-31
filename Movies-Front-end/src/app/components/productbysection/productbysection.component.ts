@@ -136,7 +136,6 @@ this.p -=1;
 }
   
   search() {
-    this.isLoading = true;
     if(this.keyword!=''){
     console.log(this.keyword)
     if(this.name=='Movies'){
@@ -145,7 +144,6 @@ this.p -=1;
         err=>console.log(err.error),
         ()=>{
           console.log(this.movies)
-          this.isLoading = false;
 
         }
       )
@@ -155,7 +153,6 @@ this.p -=1;
         err=>console.log(err.error),
         ()=>{
           console.log(this.shows)
-          this.isLoading = false;
 
         }
       )

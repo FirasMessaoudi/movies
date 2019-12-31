@@ -11,10 +11,10 @@
       <div class="modal-header text-center">
         <div class="d-flex justify-content-center w-75">
         <a class="w-100 signin">
-        <h4 style="color: white" class="modal-title font-weight-bold "><span class="actii">{{'App.Sign in' | translate}}</span></h4>
+        <h4 style="color: black" class="modal-title font-weight-bold "><span class="actii">{{'App.Sign in' | translate}}</span></h4>
         </a>
         <a class="w-100 signup" (click)="framelogin.hide();framesignup.show();">
-        <h4 style="color: white" class="modal-title font-weight-bold ">{{'App.sign up' | translate}}</h4>
+        <h4 style="color: black" class="modal-title font-weight-bold ">{{'App.sign up' | translate}}</h4>
         </a >
       </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="framelogin.hide()">
@@ -24,16 +24,16 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <i class="fa fa-user prefix grey-text"></i>
-          <input type="text" [(ngModel)]="username" name="username" id="defaultForm-user"  class="form-control validate"
+          <input type="text" [(ngModel)]="username" name="username" id="defaultForm-user"  class="form-control "
             mdbInputDirective>
-          <label data-error="wrong" data-success="right" for="defaultForm-user">{{'App.Username' | translate}}</label>
+          <label  for="defaultForm-user">{{'App.Username' | translate}}</label>
         </div>
 
         <div class="md-form mb-4">
           <i class="fa fa-lock prefix grey-text"></i>
-          <input type="password" [(ngModel)]="password" name="password" id="defaultForm-pass"  class="form-control validate"
+          <input type="password" [(ngModel)]="password" name="password" id="defaultForm-pass"  class="form-control "
             mdbInputDirective>
-          <label data-error="wrong" data-success="right" for="defaultForm-pass">{{'App.Password' | translate}}</label>
+          <label  for="defaultForm-pass">{{'App.Password' | translate}}</label>
         </div>
 
       </div>
@@ -53,18 +53,17 @@ aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header text-center">
         <div class="d-flex justify-content-center w-75">
             <a class="w-100 signin" (click)="framesignup.hide();framelogin.show();">
-            <h4 style="color: white" class="modal-title font-weight-bold ">{{'App.Sign in' | translate}}</h4>
+            <h4 style="color: black" class="modal-title font-weight-bold ">{{'App.Sign in' | translate}}</h4>
             </a>
             <a class="w-100 signup">
-            <h4 style="color: white" class="modal-title font-weight-bold "><span class="actii">{{'App.sign up' | translate}}</span></h4>
+            <h4 style="color: black" class="modal-title font-weight-bold "><span class="actii">{{'App.sign up' | translate}}</span></h4>
             </a >
           </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="framesignup.hide()">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
-    <div class="modal-body mx-3">
+    <div [formGroup]="signUpForm" class="modal-body mx-3">
         <div class="md-form mb-5">
             <i class="fa fa-user prefix grey-text"></i>
             <input type="text" name="firstname" formControlName="firstname" id="orangeForm-name" class="form-control validate" 
@@ -93,9 +92,8 @@ aria-labelledby="myModalLabel" aria-hidden="true">
 
     </div>
     <div class="modal-footer d-flex justify-content-center">
-      <button mdbBtn color="deep-orange" class="waves-light lgbutton" mdbWavesEffect>{{'App.sign up' | translate}}</button>
+      <button (click)="signUp()" mdbBtn color="deep-orange" class="waves-light lgbutton" mdbWavesEffect>{{'App.sign up' | translate}}</button>
     </div>
-  </form>
   </div>
 </div>
 </div>
@@ -113,5 +111,5 @@ aria-labelledby="myModalLabel" aria-hidden="true">
     <a class="nav-link waves-light actions" (click)="signout()" mdbWavesEffect>
       <i class="fa fa-power-off"></i> {{'App.Sign out' | translate}}</a>
   </li> -->
-  <app-actions></app-actions>
+  <app-actions *ngIf="isLoggedIn" [profil]="profil"></app-actions>
 </ng-template>

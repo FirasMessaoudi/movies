@@ -48,6 +48,7 @@ import { SlideshowModule} from 'ng-simple-slideshow';
 import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
 import { NgImageSliderModule } from 'ng-image-slider';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -113,6 +114,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     SlickModule.forRoot(),
     SlideshowModule,
     LazyLoadImageModule,
+    Ng4LoadingSpinnerModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

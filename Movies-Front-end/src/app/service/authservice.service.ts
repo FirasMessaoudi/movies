@@ -6,6 +6,7 @@ import { ILogin } from '../domain/ilogin';
 import { JwtResponse } from '../domain/jwtrespons';
 import { environment } from 'src/environments/environment';
 
+
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -22,7 +23,7 @@ export class AuthService {
  
   // JwtResponse(accessToken,type,username,authorities)
   attemptAuth(credentials: ILogin): Observable<JwtResponse> {
-    return this.http.post<JwtResponse>(this.loginUrl, credentials, httpOptions);
+    return this.http.post<any>(this.loginUrl, credentials, httpOptions);
   }
  
   // SignUpInfo(name,username,email,role,password)

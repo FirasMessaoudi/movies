@@ -9,14 +9,14 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
+  template: string =` <img src="https://www.knoll.com/images/cylindo-spinner-512v2.gif" width="100%" height="100%" />`;
   ngOnInit(): void {
     if (!this.lang) {
       this.storageService.save('language', 'en');
   }
   console.log(this.router.url)
   }
-  title = 'Movies Guide';
+  title = 'Movies Box';
   lang: string = this.storageService.read('language');
 
   constructor (public router: Router,private storageService: StorageService, public translateService: TranslateService) {

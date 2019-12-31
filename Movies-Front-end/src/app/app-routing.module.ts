@@ -11,6 +11,7 @@ import { WatchlistComponent } from './components/watchlist/watchlist.component';
 import { ActorsKnownForComponent } from './components/actors-known-for/actors-known-for.component';
 import { ShowDetailsComponent } from './components/show-details/show-details.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 const appRoutes: Routes = [
   {path: 'viewDetail/:section/:idProduct', component: ProductDetailsComponent},
   {path: 'allProduct/:nameSection', component: ProductbysectionComponent},
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
   {path: '', component: ProductsListComponent},
   {path: 'settings',component: SettingsComponent},
   {path:'Top_Rated', component: ProductbyimdbComponent},
-
+  {path: 'not-found', component: PageNotFoundComponent},
   {path: '**', redirectTo: 'home' },
   {path:'',redirectTo: 'home', pathMatch: 'full'}
 

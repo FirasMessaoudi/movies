@@ -1,5 +1,5 @@
 export class JwtResponse {
-    accessToken: string;
-    username: string;
-    authorities: string[];
+    token: string;
+    // username: string;
+    // authorities: string[];
 }

@@ -5,7 +5,7 @@ import org.mapstruct.Mappings;
 import tn.sesame.dto.ContactDTO;
 import tn.sesame.model.Contact;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring",uses = {})
 public interface ContactMapper {
     @Mappings({
 

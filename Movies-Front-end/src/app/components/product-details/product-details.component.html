@@ -13,7 +13,7 @@
       <span></span>
     </div>
 <!-- </div> -->
-  <ng-template #details>
+  <ng-template  #details>
     <!-- Movie -->
     <ng-container *ngIf="section == 'Movies' ; else serieDetails">
         <div style="margin-top: 0px" class="movie">
@@ -173,6 +173,7 @@
                   </section>
                   
             </mat-tab>
+            <!-- Notes -->
             <mat-tab label="{{'App.Reviews' | translate}}">
                 <section class=" justify-content-center" >
                   <table>

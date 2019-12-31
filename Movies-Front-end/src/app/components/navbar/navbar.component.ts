@@ -36,13 +36,12 @@ modalFormSubscriptionEmail = new FormControl('', Validators.email);
    
     this.lang = this.storageService.read('language');
 
-    if (this.tokenStorage.getToken()) {
-      this.isLoggedIn = true;
-      this.roles =this.tokenStorage.getAuthorities().toString();
-    if(this.tokenStorage.getAuthorities().includes('ROLE_ADMIN'))
-     this.isAdmin=true;
-    }
-  
+    this.tokenStorage.currentStatus.subscribe(status => {
+      this.isLoggedIn = status;
+
+
+
+    })
   }
   changeLanguage(event){
     console.log("language= "+event);
