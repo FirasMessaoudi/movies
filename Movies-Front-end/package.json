@@ -58,7 +58,7 @@
     "primeng": "^7.0.5",
     "rxjs": "~6.5.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.4.2",
+    "swiper": "^6.5.1",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
