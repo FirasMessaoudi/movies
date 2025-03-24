@@ -21,7 +21,7 @@ export class ProductsListComponent implements OnInit {
   tvs: IMovie;
 
   categories: ICategory[];
-  lang:string;
+  lang: string;
   showError: boolean;
 
   // tslint:disable-next-line:max-line-length
@@ -36,24 +36,24 @@ export class ProductsListComponent implements OnInit {
      res => this.movies = res,
      erreur => {console.log('erreur movie');
      this.showError = true;
-   
-   },     ()=>{
-       console.log(this.movies.results)
+
+   },     () => {
+       console.log(this.movies.results);
        this.isLoadingResults = false;
      }
-    )
+    );
     this._service.trendingTV().subscribe(
       res => this.tvs = res,
       erreur => {console.log('erreur movie');
       this.showError = true;
-    
-    },      ()=>{
-        console.log(this.tvs.results)
-        
+
+    },      () => {
+        console.log(this.tvs.results);
+
       }
-     )
-   
+     );
+
   }
- 
+
 
 }

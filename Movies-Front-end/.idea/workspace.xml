@@ -1,23 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6910ca15-d870-42ed-aed7-78aad423c283" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/dist/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="6910ca15-d870-42ed-aed7-78aad423c283" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/01.0a3750e6fdb29fcd632e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/02.351bd6828f980ec53eb3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/03.e438ea2aabdb1087dc4f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/04.0284d042a6c29213aaa1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/05.5014f9cce435c71ade63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/06.21612b9d3e9d84e7e876.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/07.f8da0281186df8f17f73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/08.975f7e0074400e7561ba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/09.fd19309a1932b4751387.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Bold.39b2c3031be6b4ea96e2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Bold.dc81817def276b4f2139.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Bold.e31fcf1885e371e19f57.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Bold.ecdd509cadbf1ea78b8d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Light.3b813c2ae0d04909a33a.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Light.46e48ce0628835f68a73.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Light.69f8a0617ac472f78e45.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Light.a990f611f2305dc12965.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Medium.4d9f3f9e5195e7b074bb.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Medium.574fd0b50367f886d359.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Medium.894a2ede85a483bf9bed.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Medium.fc78759e93a6cac50458.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Regular.2751ee43015f9884c364.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Regular.30799efa5bf74129468a.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Regular.ba3dcd8903e3d0af5de7.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Regular.df7b648ce5356ea1ebce.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Thin.7500519de3d82e33d158.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Thin.94998475f6aea65f5584.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Thin.954bbdeb86483e4ffea0.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/Roboto-Thin.dfe56a876d0282555d1e.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/arrow_left.270f72df47e036d9cfa1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/arrow_right.d9ccc77c8240ad0dc272.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/i18n/ar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/i18n/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/antman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/avngers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/imdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/movie_guide_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/movies.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/no_poster_available.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/profil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/images/téléchargement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/assets/scss/palette.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/color.c7a33805ffda0d32bd2a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/fontawesome-webfont.674f50d287a8c48dc19b.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/fontawesome-webfont.912ec66d7572ff821749.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/fontawesome-webfont.af7ae505a9eed503f8b8.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/fontawesome-webfont.b06871f281fee6b241d6.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/fontawesome-webfont.fee66e712a8a08eef580.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/hue.0614c27197fc3ce572e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/line.567f57385ea3dde2c9ae.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/loading.8732a6660b528fadfaeb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/main.f3c634c5d3d0426f80d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-300.177cc92d2e8027712a8c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-300.27ef0b062b2e221df16f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-300.521d17bc9f3526c690e8.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-300.60c866748ff15f5b347f.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-300.76b56857ebbae3a5a689.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-700.148a6749baa5f658a451.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-700.2e00b2635b51ba336b4b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-700.623e3205570002af47fc.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-700.7e08cc656863d52bcb5c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-700.d08c09f2f169f4a6edbc.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-regular.7aab4c13671282c90669.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-regular.9dce7f01715340861bdb.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-regular.bf2d0783515b7d75c35b.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-regular.c045b73d86803686f4cd.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/open-sans-v15-latin-regular.cffb686d7d2f4682df83.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/password-meter.d59e6dc2616c53ce8e77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/polyfills.11851462770973edfeb9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/primeicons.38d77552b0353684a208.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/primeicons.473e2a746d3c151d7dca.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/primeicons.71bb3d79dcf18b45ae84.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/primeicons.b8eccb1059ea5faaf6d8.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/runtime.ec2944dd8b20ec099bf3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/scripts.46452278d7547cdd279a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyMoviesApp/styles.07384df853a6669bd3a1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/01.0a3750e6fdb29fcd632e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/02.351bd6828f980ec53eb3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/03.e438ea2aabdb1087dc4f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/04.0284d042a6c29213aaa1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/05.5014f9cce435c71ade63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/06.21612b9d3e9d84e7e876.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/07.f8da0281186df8f17f73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/08.975f7e0074400e7561ba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/09.fd19309a1932b4751387.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Bold.39b2c3031be6b4ea96e2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Bold.dc81817def276b4f2139.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Bold.e31fcf1885e371e19f57.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Bold.ecdd509cadbf1ea78b8d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Light.3b813c2ae0d04909a33a.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Light.46e48ce0628835f68a73.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Light.69f8a0617ac472f78e45.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Light.a990f611f2305dc12965.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Medium.4d9f3f9e5195e7b074bb.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Medium.574fd0b50367f886d359.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Medium.894a2ede85a483bf9bed.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Medium.fc78759e93a6cac50458.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Regular.2751ee43015f9884c364.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Regular.30799efa5bf74129468a.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Regular.ba3dcd8903e3d0af5de7.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Regular.df7b648ce5356ea1ebce.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Thin.7500519de3d82e33d158.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Thin.94998475f6aea65f5584.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Thin.954bbdeb86483e4ffea0.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Roboto-Thin.dfe56a876d0282555d1e.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/arrow_left.270f72df47e036d9cfa1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/arrow_right.d9ccc77c8240ad0dc272.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/i18n/ar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/i18n/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/antman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/avngers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/imdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/movie_guide_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/movies.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/no_poster_available.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/profil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/téléchargement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/palette.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/color.c7a33805ffda0d32bd2a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontawesome-webfont.674f50d287a8c48dc19b.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontawesome-webfont.912ec66d7572ff821749.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontawesome-webfont.af7ae505a9eed503f8b8.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontawesome-webfont.b06871f281fee6b241d6.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontawesome-webfont.fee66e712a8a08eef580.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/hue.0614c27197fc3ce572e1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/line.567f57385ea3dde2c9ae.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/loading.8732a6660b528fadfaeb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.f3c634c5d3d0426f80d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-300.177cc92d2e8027712a8c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-300.27ef0b062b2e221df16f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-300.521d17bc9f3526c690e8.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-300.60c866748ff15f5b347f.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-300.76b56857ebbae3a5a689.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-700.148a6749baa5f658a451.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-700.2e00b2635b51ba336b4b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-700.623e3205570002af47fc.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-700.7e08cc656863d52bcb5c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-700.d08c09f2f169f4a6edbc.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-regular.7aab4c13671282c90669.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-regular.9dce7f01715340861bdb.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-regular.bf2d0783515b7d75c35b.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-regular.c045b73d86803686f4cd.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/open-sans-v15-latin-regular.cffb686d7d2f4682df83.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/password-meter.d59e6dc2616c53ce8e77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/polyfills.11851462770973edfeb9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/primeicons.38d77552b0353684a208.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/primeicons.473e2a746d3c151d7dca.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/primeicons.71bb3d79dcf18b45ae84.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/primeicons.b8eccb1059ea5faaf6d8.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/runtime.ec2944dd8b20ec099bf3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scripts.46452278d7547cdd279a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles.07384df853a6669bd3a1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/actions/actions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/actions/actions.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/actions/actions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/actions/actions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/actors-known-for/actors-known-for.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/actors-known-for/actors-known-for.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/actors-known-for/actors-known-for.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/actors-known-for/actors-known-for.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/allproductbycategory/allproductbycategory.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/allproductbycategory/allproductbycategory.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/highlights/highlights.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/highlights/highlights.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/highlights/highlights.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/highlights/highlights.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/modalfavorit/modalfavorit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/modalfavorit/modalfavorit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/modalfavorit/modalfavorit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/modalfavorit/modalfavorit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/product-details/product-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/product-details/product-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/product-details/product-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/product-details/product-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/productbyimdb/productbyimdb.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/productbyimdb/productbyimdb.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/productbysection/productbysection.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/productbysection/productbysection.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/productbysection/productbysection.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/productbysection/productbysection.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/products-list/products-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/settings/settings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/settings/settings.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/settings/settings.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/show-details/show-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/show-details/show-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/show-details/show-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/show-details/show-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/upcomingmovies/upcomingmovies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/upcomingmovies/upcomingmovies.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/watchlist/watchlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/watchlist/watchlist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/watchlist/watchlist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/watchlist/watchlist.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service/tokenstorage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/tokenstorage.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_apple_AppleJavaExtensions_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_google_code_findbugs_bcel_findbugs_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_google_code_findbugs_findbugs_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_google_code_findbugs_jFormatString_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_sun_xml_messaging_saaj_saaj_impl_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_xml_soap_javax_xml_soap_api_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__javax_xml_ws_jaxws_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_jvnet_mimepull_mimepull_1_9_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_mockito_mockito_core_2_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_modelmapper_modelmapper_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_ow2_asm_asm_5_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_ow2_asm_asm_debug_all_5_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_services_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_aop_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_beans_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_context_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_core_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_expression_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_orm_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_test_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_ws_spring_ws_core_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_springframework_ws_spring_xml_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/movies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/movies.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-back-end/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1380" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectId" id="2ucqeoATUw9ykLQ1u5tIcmfYYcf" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -28,26 +364,27 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/massaofi/Documents/Firas/movies/Movies-Front-end&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/massaofi/Documents/Firas/movies/Movies-Front-end/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
@@ -71,6 +408,15 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -82,6 +428,9 @@
       <option name="presentableId" value="Default" />
       <updated>1565086336167</updated>
       <workItem from="1565086340207" duration="1176000" />
+      <workItem from="1742558308630" duration="3078000" />
+      <workItem from="1742564806702" duration="3667000" />
+      <workItem from="1742803052770" duration="7094000" />
     </task>
     <servers />
   </component>
@@ -124,7 +473,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="masterDetails">
     <states>

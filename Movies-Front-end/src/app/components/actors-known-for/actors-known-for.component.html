@@ -15,33 +15,32 @@
   <p>{{person.biography}}</p>
 </div>
 
-<mat-tab-group>
-  <mat-tab label="{{'App.Star movie' | translate}}">
-    <section class="items" *ngIf="movies">
-      <div *ngFor="let movie of movies">
-          <app-cardmovie [section]=" 'Movies' " [id] ="movie.id" [image] = "movie.poster_path" [title] = "movie.title">
-          
-            </app-cardmovie>    
-        <!-- <a (click)="addMovie(movie.id)">
-          <img  *ngIf="movie.poster_path" [src]="'https://image.tmdb.org/t/p/w185/' + movie.poster_path"
-            alt="poster movie">
-            </a>
-          <img *ngIf="!movie.poster_path" src="assets/images/no_poster_available.jpg" alt="No poster available">
-          <div class="card-body">
-          <h4 class="card-title">{{movie.title}}</h4>
-          <p class="card-text">( {{movie.character}} )</p>
-        </div> -->
-      </div>
-    </section>
-  </mat-tab>
-  <mat-tab label="{{'App.Star tv' | translate}}">
-    <section class="items" *ngIf="tv_credits">
-      <div *ngFor="let tv of tv_credits">
-          <app-cardmovie [section]=" 'Series' " [id] ="tv.id" [image] = "tv.poster_path" [title] = "tv.name">
-          
-            </app-cardmovie>    
-      </div>
-    </section>
-  </mat-tab>
-</mat-tab-group>
+  <p-tabView>
+    <p-tabPanel [header]="'App.Star movie' | translate">
+      <section class="items" *ngIf="movies">
+        <div *ngFor="let movie of movies">
+          <app-cardmovie
+            [section]="'Movies'"
+            [id]="movie.id"
+            [image]="movie.poster_path"
+            [title]="movie.title">
+          </app-cardmovie>
+        </div>
+      </section>
+    </p-tabPanel>
+
+    <p-tabPanel [header]="'App.Star tv' | translate">
+      <section class="items" *ngIf="tv_credits">
+        <div *ngFor="let tv of tv_credits">
+          <app-cardmovie
+            [section]="'Series'"
+            [id]="tv.id"
+            [image]="tv.poster_path"
+            [title]="tv.name">
+          </app-cardmovie>
+        </div>
+      </section>
+    </p-tabPanel>
+  </p-tabView>
+
 </div>

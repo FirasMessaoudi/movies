@@ -10,30 +10,31 @@ import { Router } from '@angular/router';
 })
 export class ActionsComponent implements OnInit {
 
-  isAdmin=false;
-  isLoggedIn=false;
+  isAdmin = false;
+  isLoggedIn = false;
   @Input()
-  profil:string;
+  profil: string;
   roles: string;
+  displayModal = false;
 
-  constructor(private toastr: ToastrService,private tokenStorage: TokenStorageService, private router: Router) { }
+  constructor(private toastr: ToastrService, private tokenStorage: TokenStorageService, private router: Router) { }
 
   ngOnInit() {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
-      this.profil=this.tokenStorage.getUsername();
+      this.profil = this.tokenStorage.getUsername();
       // this.roles = this.tokenStorage.getAuthorities();
       // if(this.tokenStorage.getAuthorities().includes('ROLE_ADMIN'))
       // this.isAdmin=true;
     }
   }
- 
-  signout(){
-  
+
+  signout() {
+
     this.tokenStorage.signOut();
     this.isLoggedIn = false;
     this.router.navigate(['/home']);
-  
-    
+
+
   }
 }

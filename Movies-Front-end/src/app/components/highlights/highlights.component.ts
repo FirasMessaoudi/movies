@@ -11,12 +11,12 @@ import { IMovie } from 'src/app/domain/movie';
 })
 export class HighlightsComponent implements OnInit {
   highlightmovies: IMovie;
-  tvs:IMovie;
+  tvs: IMovie;
   array = [ 1, 2, 3, 4 ];
   name = 'Angular with Swiper';
-  mySwiper: Swiper;
-  p=1;
-  constructor(config: NgbCarouselConfig, private _service: MovieService,private router: Router) {
+  // mySwiper: Swiper;
+  p = 1;
+  constructor(config: NgbCarouselConfig, private _service: MovieService, private router: Router) {
     config.interval = 5000;
     config.wrap = true;
     config.keyboard = true;
@@ -24,29 +24,29 @@ export class HighlightsComponent implements OnInit {
     config.showNavigationArrows = true;
    }
 
-  
-  ngOnInit(){
-    
+
+  ngOnInit() {
+
     this._service.trendingMovie().subscribe(
       res => this.highlightmovies = res,
-      err=> console.log(err.error),
-      ()=>{
-        console.log(this.highlightmovies.results)
+      err => console.log(err.error),
+      () => {
+        console.log(this.highlightmovies.results);
       }
-     )
+     );
      this._service.trendingTV().subscribe(
        res => this.tvs = res,
-       err=> console.log(err.error),
-       ()=>{
-         console.log(this.tvs.results)
-         
+       err => console.log(err.error),
+       () => {
+         console.log(this.tvs.results);
+
        }
-      )
+      );
       //
-      
+
   }
-  goToMovie($event){
-   this.router.navigate(['/user_invitation','Movies',$event])
+  goToMovie($event) {
+   this.router.navigate(['/user_invitation', 'Movies', $event]);
   }
 
 }

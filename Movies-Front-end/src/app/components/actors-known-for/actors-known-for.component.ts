@@ -20,14 +20,14 @@ export class ActorsKnownForComponent implements OnInit {
   tv_credits: TvCastModel[];
   isLoadingResults: boolean;
 
-  path ='https://image.tmdb.org/t/p/w185/';
- cover='https://image.tmdb.org/t/p/original/';
+  path = 'https://image.tmdb.org/t/p/w185/';
+ cover = 'https://image.tmdb.org/t/p/original/';
  youtube = 'https://www.youtube.com/embed/';
 
  video: MovieVideosModel;
 
   constructor(private route: ActivatedRoute,
-    private location: Location,private serviceactor: CategoryService,private toastr: ToastrService,private categoryservice: CategoryService, private router: Router
+    private location: Location, private serviceactor: CategoryService, private toastr: ToastrService, private categoryservice: CategoryService, private router: Router
     ) { }
 
   ngOnInit() {
@@ -42,9 +42,9 @@ export class ActorsKnownForComponent implements OnInit {
       this.person = person;
       this.movies = movies.cast;
       this.tv_credits = tv_credits.cast;
-  
-    })
- 
+
+    });
+
   }
   back() {
     this.location.back();

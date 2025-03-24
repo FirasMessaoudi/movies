@@ -9,14 +9,14 @@ import { MovieService } from 'src/app/service/movie.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-shows:IMovie;
-movies:IMovie;
+shows: IMovie;
+movies: IMovie;
 keyword = '';
-p: number = 1;
-ps:number= 1;
-s: number = 12;
-t: number = 1;
-ts:number = 1;
+p = 1;
+ps = 1;
+s = 12;
+t = 1;
+ts = 1;
 isLoading = true;
   showError: boolean;
   constructor(private route: ActivatedRoute, private service: MovieService, private router: Router) {
@@ -29,55 +29,53 @@ isLoading = true;
       this.keyword = params['keyword'];
     }
     );
-  
+
   this.init();
   this.initS();
   }
-  init(){
+  init() {
     this.isLoading = true;
-    this.service.getMovieByName(this.keyword,this.p).subscribe(
-      res => 
-      {this.movies =res
+    this.service.getMovieByName(this.keyword, this.p).subscribe(
+      res => {this.movies = res;
         this.t = res.total_pages;
       }
         ,
         erreur => {console.log('erreur movie');
         this.showError = true;
-      
-      },      ()=>{
+
+      },      () => {
         this.isLoading = false;
 
       }
-    )
-   
+    );
+
   }
-  initS(){
+  initS() {
     this.isLoading = true;
-    this.service.getTvShowByName(this.keyword,this.ps).subscribe(
-      res => 
-      {this.shows =res
+    this.service.getTvShowByName(this.keyword, this.ps).subscribe(
+      res => {this.shows = res;
         this.ts = res.total_pages;
       }
         ,
         erreur => {console.log('erreur movie');
         this.showError = true;
-      
-      },      ()=>{
+
+      },      () => {
         this.isLoading = false;
 
       }
-    )
+    );
   }
-  changePage($event){
+  changePage($event) {
     this.p = $event;
     console.log(this.p);
     this.init();
-  
+
   }
-  changePageS($event){
+  changePageS($event) {
     this.ps = $event;
     console.log(this.ps);
     this.initS();
-  
+
   }
 }

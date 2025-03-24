@@ -16,12 +16,12 @@ export class ShowDetailsComponent implements OnInit {
   season: ISeason;
   nbEpisodes: number;
   episode: IEpisode;
-  episodes: IEpisodeDetail[]=[];
-  episodeCount=[];
+  episodes: IEpisodeDetail[] = [];
+  episodeCount = [];
   @Input()
   idtmdb: number;
-  link='';
-  overview='';
+  link = '';
+  overview = '';
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {
@@ -29,16 +29,17 @@ export class ShowDetailsComponent implements OnInit {
       res => this.showDetail = res,
        err => console.log('erreur' + this.showDetail),
        () => {
-         console.log(this.showDetail.name)
+         console.log(this.showDetail.name);
          this.seasonNumber = this.showDetail.last_episode_to_air.season_number;
          this.nbEpisodes = this.showDetail.last_episode_to_air.episode_number;
-         console.log(this.nbEpisodes)
-         for(let i=1;i<=this.nbEpisodes;i++)
+         console.log(this.nbEpisodes);
+         for (let i = 1; i <= this.nbEpisodes; i++) {
          this.episodeCount.push(i);
-         console.log(this.episodeCount)
-         let lastSeason=this.showDetail.last_episode_to_air.season_number;
-         let lastEpisode=this.showDetail.last_episode_to_air.episode_number;
-         this.link ="https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id="+this.idtmdb+"&tmdb=1&s="+lastSeason+"&e="+lastEpisode;
+         }
+         console.log(this.episodeCount);
+         const lastSeason = this.showDetail.last_episode_to_air.season_number;
+         const lastEpisode = this.showDetail.last_episode_to_air.episode_number;
+         this.link = 'https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id=' + this.idtmdb + '&tmdb=1&s=' + lastSeason + '&e=' + lastEpisode;
         // this.overview = this
 
         // this.nbEpisodes = this.showDetail.seasons[0].episode_count;
@@ -57,20 +58,21 @@ export class ShowDetailsComponent implements OnInit {
        }
     );
   }
-  changeSeason(event){
-    this.seasonNumber=event;
-    this.season=this.showDetail.seasons[this.seasonNumber];
+  changeSeason(event) {
+    this.seasonNumber = event;
+    this.season = this.showDetail.seasons[this.seasonNumber];
 
     console.log(this.seasonNumber);
     console.log(this.season.episode_count);
     /*for(let i=0;i<this.season.episode_count;i++)
     this.nbEpisodes[i]=i+1;*/
     this.nbEpisodes = this.showDetail.seasons[this.seasonNumber].episode_count;
-    this.episodeCount=[];
-    for(let i=1;i<=this.nbEpisodes;i++)
+    this.episodeCount = [];
+    for (let i = 1; i <= this.nbEpisodes; i++) {
          this.episodeCount.push(i);
+    }
 
-         this.link ="https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id="+this.idtmdb+"&tmdb=1&s="+this.seasonNumber+"&e="+this.nbEpisodes;
+         this.link = 'https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id=' + this.idtmdb + '&tmdb=1&s=' + this.seasonNumber + '&e=' + this.nbEpisodes;
 
     // this.episodes=[];
     //     for( let i=1;i<=this.nbEpisodes;i++){
@@ -85,8 +87,8 @@ export class ShowDetailsComponent implements OnInit {
     //       );
     //     }
     }
-    changeEpisode($event){
-      this.link ="https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id="+this.idtmdb+"&tmdb=1&s="+this.seasonNumber+"&e="+$event;
+    changeEpisode($event) {
+      this.link = 'https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&tv=1&video_id=' + this.idtmdb + '&tmdb=1&s=' + this.seasonNumber + '&e=' + $event;
 
     }
 

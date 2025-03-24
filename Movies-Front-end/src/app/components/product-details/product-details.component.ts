@@ -30,178 +30,179 @@ export class ProductDetailsComponent implements OnInit {
   id: number;
   closeResult: string;
   movies: IMovie;
-  similar:IMovie;
+  similar: IMovie;
   year: number;
- path ='https://image.tmdb.org/t/p/w185/';
+ path = 'https://image.tmdb.org/t/p/w185/';
  youtube = 'https://www.youtube.com/embed/';
- trailer :string;
+ trailer: string;
  video: MovieVideosModel;
  actors: MovieCastModel;
-  note =0;
+  note = 0;
   user: IUser;
   message: string;
   movieUserID: IMovieUserId;
-  existsInFav :boolean;
-  existsInWatchList :boolean;
-  isLoadingResults= true;
+  existsInFav: boolean;
+  existsInWatchList: boolean;
+  isLoadingResults = true;
   myWatchList: IFavorit[];
   similarProducts: MovieModel[];
-  username:string;
-  isLoggedIn=false;
-  link:string;
+  username: string;
+  isLoggedIn = false;
+  link: string;
   showDetail: TvDetailsModel;
-  movieDetail:MovieDetailsModel;
-  seasonNumber=1;
+  movieDetail: MovieDetailsModel;
+  seasonNumber = 1;
   season: ISeason;
-  nbEpisodes:number[]=[];
+  nbEpisodes: number[] = [];
   episode: IEpisode;
-  lang:string;
-  read=true;
-  section='';
+  lang: string;
+  read = true;
+  section = '';
   showError: boolean;
 
 
   // tslint:disable-next-line:max-line-length
-  constructor( private storageService: StorageService,  private translateService: TranslateService,private toaster: ToastrService,private tokenStorage: TokenStorageService,private userservice: UserService, private modalService: NgbModal, private location: Location, private sanitizer: DomSanitizer, private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
+  constructor( private storageService: StorageService,  private translateService: TranslateService, private toaster: ToastrService, private tokenStorage: TokenStorageService, private userservice: UserService, private modalService: NgbModal, private location: Location, private sanitizer: DomSanitizer, private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
     this.router.routeReuseStrategy.shouldReuseRoute = function() {
           return false;
 } ;
 
   }
- 
+
   openSm(content) {
     this.modalService.open(content, { size: 'sm', centered: true });
   }
   ngOnInit() {
-    this.read=true;
+    this.read = true;
 
    // this.id = +this.route.snapshot.params['idProduct'];
    this.lang = this.storageService.read('language');
 console.log(this.lang);
-   if(this.tokenStorage.getToken())
-   this.isLoggedIn=true;
+   if (this.tokenStorage.getToken()) {
+   this.isLoggedIn = true;
+   }
    this.route.params.subscribe(params => {
      this.id = params['idProduct'];
      this.section = params['section'];
    }
    );
-   if(this.section ==='Series') {
-   this.movieService.getTvShowById(this.id,this.lang).subscribe(
+   if (this.section === 'Series') {
+   this.movieService.getTvShowById(this.id, this.lang).subscribe(
      res => this.showDetail = res,
      erreur => {console.log('erreur SERIe');
      this.showError = true;
-   
-   },   ()=>{
-   
+
+   },   () => {
+
       this.movieService.getSimilarTv(this.showDetail.id).subscribe(
-        res => this.similar =res,
-        err =>console.log("ma jewech"),
-        ()=>{
+        res => this.similar = res,
+        err => console.log('ma jewech'),
+        () => {
          // console.log("siim before"+this.similar.results.length);
-          this.similarProducts=this.similar.results;
-          //console.log("siim" +this.similarProducts.length)
-        }
-      )
-      this.movieService.getTvCast(this.showDetail.id).subscribe(
-        res=>this.actors =res,
-        err=>console.log('erreur'),
-        ()=>{
-        
-          this.movieService.getTvVideo(this.showDetail.id).subscribe(
-            res =>this.video =res,
-            err => console.log('erreur'),
-            ()=>{
-              this.youtube+=this.video.results[0].key;
-            }
-            
-          )
+          this.similarProducts = this.similar.results;
+          // console.log("siim" +this.similarProducts.length)
         }
       );
-  
-         this.isLoadingResults=false;
+      this.movieService.getTvCast(this.showDetail.id).subscribe(
+        res => this.actors = res,
+        err => console.log('erreur'),
+        () => {
+
+          this.movieService.getTvVideo(this.showDetail.id).subscribe(
+            res => this.video = res,
+            err => console.log('erreur'),
+            () => {
+              this.youtube += this.video.results[0].key;
+            }
+
+          );
+        }
+      );
+
+         this.isLoadingResults = false;
     }
-    
+
    );
 
-  } else{
+  } else {
 
-    this.movieService.getMovieById(this.id,this.lang).subscribe(
+    this.movieService.getMovieById(this.id, this.lang).subscribe(
       res => this.movieDetail = res,
       erreur => {console.log('erreur movie');
       this.showError = true;
-    
-    },    ()=>{
-    this.link="https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&video_id="+this.movieDetail.id+"&tmdb=1";
+
+    },    () => {
+    this.link = 'https://videospider.in/getvideo?key=l6IeT0ahNeECt2IH&video_id=' + this.movieDetail.id + '&tmdb=1';
      // if(this.product.nbSeasons >-1){
        this.movieService.getSimilarMovies(this.movieDetail.id).subscribe(
-         res => this.similar =res,
-         err =>console.log("ma jewech"),
-         ()=>{
+         res => this.similar = res,
+         err => console.log('ma jewech'),
+         () => {
          //  console.log("siim before"+this.similar.results.length);
-           this.similarProducts=this.similar.results;
+           this.similarProducts = this.similar.results;
           // console.log("siim" +this.similarProducts.length)
          }
-       )
+       );
        this.movieService.getMovieCast(this.movieDetail.id).subscribe(
-         res=>this.actors =res,
-         err=>console.log('erreur'),
-         ()=>{
-         
+         res => this.actors = res,
+         err => console.log('erreur'),
+         () => {
+
           this.movieService.getMovieVideo(this.movieDetail.id).subscribe(
-            res =>this.video =res,
+            res => this.video = res,
             err => console.log('erreur'),
-            ()=>{
-              this.youtube+=this.video.results[0].key;
+            () => {
+              this.youtube += this.video.results[0].key;
             }
-            
-          )
+
+          );
          }
        );
-   
-          this.isLoadingResults=false;
+
+          this.isLoadingResults = false;
      }
-     
+
     );
   }
-            
-  if(this.tokenStorage.getToken()){
-                  this.username=this.tokenStorage.getUsername();
-                
+
+  if (this.tokenStorage.getToken()) {
+                  this.username = this.tokenStorage.getUsername();
+
                 this.userservice.getUser(this.username).subscribe(
                   res => this.user = res,
                   err => console.log('err'),
                   () => {
                     console.log(this.user);
-                    this.userservice.getMovieNote(new IMovieUserId(this.id,this.user.email)).subscribe(
+                    this.userservice.getMovieNote(new IMovieUserId(this.id, this.user.email)).subscribe(
                       res => this.note = res,
-                      err =>console.log(err.error),
-                      ()=>{
+                      err => console.log(err.error),
+                      () => {
                         console.log(this.note);
-                        this.userservice.existsInFavoris(new IMovieUserId(this.id,this.user.email)).subscribe(
+                        this.userservice.existsInFavoris(new IMovieUserId(this.id, this.user.email)).subscribe(
                           res => this.existsInFav = res,
                           err => console.log(err.error),
                           () => {
                             console.log(this.existsInFav);
-                            this.userservice.existsInWatchList(new IMovieUserId(this.id,this.user.email)).subscribe(
+                            this.userservice.existsInWatchList(new IMovieUserId(this.id, this.user.email)).subscribe(
                              res => this.existsInWatchList = res,
                              err => console.log(err.error),
                            ),
-                           ()=>{
+                           () => {
                              console.log(this.existsInWatchList);
-                           
-                           }
+
+                           };
                           }
                         );
                       }
-                    )
-                   
-                  
+                    );
+
+
                   }
-                );      
+                );
                 }
 
-     
-   
+
+
   }
 back() {
   this.location.back();
@@ -211,8 +212,8 @@ onOpen(event: any) {
   console.log(event);
 }
 addOrDeleteWatchList() {
-  if(this.tokenStorage.getToken()){
-    let fav = new IFavorit(new IMovieUserId(this.id,this.user.email));
+  if (this.tokenStorage.getToken()) {
+    const fav = new IFavorit(new IMovieUserId(this.id, this.user.email));
     fav.watched = false;
     fav.section = this.section;
 
@@ -221,58 +222,58 @@ addOrDeleteWatchList() {
     () => this.message = 'hhhhh');
   //  alert('added to watch list');
     this.existsInWatchList = !this.existsInWatchList;
-    if(this.existsInWatchList)
-    this.toaster.success("Program added to watchlist");
-    else
-    this.toaster.success("product removed from watchlist")
-  }
-  else {
-    this.toaster.warning("you must sign in first");
+    if (this.existsInWatchList) {
+    this.toaster.success('Program added to watchlist');
+    } else {
+    this.toaster.success('product removed from watchlist');
+    }
+  } else {
+    this.toaster.warning('you must sign in first');
   }
 
 }
 addOrDeleteFavorite() {
-  if(this.tokenStorage.getToken()){
-    let fav = new IFavorit(new IMovieUserId(this.id,this.user.email));
+  if (this.tokenStorage.getToken()) {
+    const fav = new IFavorit(new IMovieUserId(this.id, this.user.email));
     fav.section = this.section;
   this.userservice.addToMyFav(fav).subscribe(
-    res=>console.log(res),
-    err=> console.log(err.error),
+    res => console.log(res),
+    err => console.log(err.error),
     () => console.log('user = ', this.user.email, 'id = ' , this.id),
     );
     this.existsInFav = !this.existsInFav;
-    if(this.existsInFav)
-    this.toaster.success("program added to favorite");
-    else 
-    this.toaster.success("program removed from favorite");
-  }
-  else{
-    this.toaster.warning("you must sign in first");
+    if (this.existsInFav) {
+    this.toaster.success('program added to favorite');
+    } else {
+    this.toaster.success('program removed from favorite');
+    }
+  } else {
+    this.toaster.warning('you must sign in first');
   }
 }
 rateMovie(event) {
 // this.movieUserID = new IMovieUserId(this.id, this.user.email);
-let fav = new IFavorit(new IMovieUserId(this.id,this.user.email));
+const fav = new IFavorit(new IMovieUserId(this.id, this.user.email));
 fav.section = this.section;
 fav.note = event;
-if(this.tokenStorage.getToken()){
+if (this.tokenStorage.getToken()) {
 console.log(this.note);
-this.note=event;
+this.note = event;
 this.userservice.rateMovie(fav).subscribe(
-  res=>console.log(res),
+  res => console.log(res),
   err => console.log('msg')
 );
 console.log(this.note);
+} else {
+  this.toaster.warning('Sign to rate this program');
 }
-else {
-  this.toaster.warning("Sign to rate this program");
 }
+changeSeason(event) {
+this.seasonNumber = event;
+this.season = this.showDetail.seasons[this.seasonNumber];
+for (let i = 0; i < this.season.episode_count; i++) {
+this.nbEpisodes[i] = i + 1;
 }
-changeSeason(event){
-this.seasonNumber=event;
-this.season=this.showDetail.seasons[this.seasonNumber];
-for(let i=0;i<this.season.episode_count;i++)
-this.nbEpisodes[i]=i+1;
 }
 }
 

@@ -1,115 +1,100 @@
-<button *ngIf="!isLoggedIn" nz-button (click)="framelogin.show()" class="waves-light lgbutton">{{'App.Sign in' | translate}}</button>
-<div *ngIf="isLoggedIn" nzPlacement="bottom" nz-popover [nzContent]="content" class="d-flex justify-content-center">
-<img src="assets/images/profil.png"/>
-<span style="color: white;margin-left: 7px;margin-top: 3px" class="font-weight-bold">{{profil}}</span>
+<!-- Sign-in Button -->
+<button *ngIf="!isLoggedIn" pButton type="button" class="lgbutton" (click)="loginDialog = true">
+  {{ 'App.Sign in' | translate }}
+</button>
+
+<!-- User Profile (Popover) -->
+<div *ngIf="isLoggedIn" class="d-flex justify-content-center">
+  <img src="assets/images/profil.png" (click)="overlay.toggle($event)" style="cursor: pointer;">
+  <span class="font-weight-bold" style="color: white; margin-left: 7px; margin-top: 3px;">{{ profil }}</span>
 </div>
-<!--Login-->
-<div mdbModal #framelogin="mdbModal"  class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
-  aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <div class="d-flex justify-content-center w-75">
-        <a class="w-100 signin">
-        <h4 style="color: black" class="modal-title font-weight-bold "><span class="actii">{{'App.Sign in' | translate}}</span></h4>
-        </a>
-        <a class="w-100 signup" (click)="framelogin.hide();framesignup.show();">
-        <h4 style="color: black" class="modal-title font-weight-bold ">{{'App.sign up' | translate}}</h4>
-        </a >
-      </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="framelogin.hide()">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fa fa-user prefix grey-text"></i>
-          <input type="text" [(ngModel)]="username" name="username" id="defaultForm-user"  class="form-control "
-            mdbInputDirective>
-          <label  for="defaultForm-user">{{'App.Username' | translate}}</label>
-        </div>
 
-        <div class="md-form mb-4">
-          <i class="fa fa-lock prefix grey-text"></i>
-          <input type="password" [(ngModel)]="password" name="password" id="defaultForm-pass"  class="form-control "
-            mdbInputDirective>
-          <label  for="defaultForm-pass">{{'App.Password' | translate}}</label>
-        </div>
-
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button (click)="attemptLogin()" mdbBtn color="default" class="waves-light lgbutton" mdbWavesEffect>{{'App.Sign in' | translate}}</button>
-      </div>
-     
-    </div>
-  </div>
-  </div>
-  <!--Sign up-->
-
-<div mdbModal #framesignup="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
-aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header text-center">
-        <div class="d-flex justify-content-center w-75">
-            <a class="w-100 signin" (click)="framesignup.hide();framelogin.show();">
-            <h4 style="color: black" class="modal-title font-weight-bold ">{{'App.Sign in' | translate}}</h4>
-            </a>
-            <a class="w-100 signup">
-            <h4 style="color: black" class="modal-title font-weight-bold "><span class="actii">{{'App.sign up' | translate}}</span></h4>
-            </a >
-          </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="framesignup.hide()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div [formGroup]="signUpForm" class="modal-body mx-3">
-        <div class="md-form mb-5">
-            <i class="fa fa-user prefix grey-text"></i>
-            <input type="text" name="firstname" formControlName="firstname" id="orangeForm-name" class="form-control validate" 
-              mdbInputDirective>
-            <label data-error="wrong" data-success="right" for="orangeForm-name">{{'App.Name' | translate}}</label>
-          </div>
-      <div class="md-form mb-5">
-        <i class="fa fa-users prefix grey-text"></i>
-        <input type="text" name="username" formControlName="username" id="orangeForm-username" class="form-control validate" 
-          mdbInputDirective>
-        <label data-error="wrong" data-success="right" for="orangeForm-username">{{'App.Username' | translate}}</label>
-      </div>
-      <div class="md-form mb-5">
-        <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" name="email" formControlName="email" id="orangeForm-email" class="form-control validate" 
-          mdbInputDirective>
-        <label data-error="wrong" data-success="right" for="orangeForm-email">{{'App.Email' | translate}}</label>
-      </div>
-
-      <div class="md-form mb-4">
-        <i class="fa fa-lock prefix grey-text"></i>
-        <input type="password" name="password" formControlName="password" id="orangeForm-pass" class="form-control validate" 
-          mdbInputDirective>
-        <label data-error="wrong" data-success="right" for="orangeForm-pass">{{'App.Password' | translate}}</label>
-      </div>
-
-    </div>
-    <div class="modal-footer d-flex justify-content-center">
-      <button (click)="signUp()" mdbBtn color="deep-orange" class="waves-light lgbutton" mdbWavesEffect>{{'App.sign up' | translate}}</button>
-    </div>
-  </div>
-</div>
-</div>
-<ng-template #content>
-  <!--
-    <li class="nav-item" >
-        <a class="nav-link waves-light actions" mdbWavesEffect>
-        <i class="fa fa-user-circle"></i>  {{'App.Manage Profile' | translate}}</a>
-      </li>
-  <li *ngIf="isAdmin" class="nav-item" >
-    <a class="nav-link waves-light actions" [routerLink]="['/admin']" mdbWavesEffect>
-      <i class="fa fa-cogs"></i> {{'App.Manage App' | translate}}</a>
-  </li>
-  <li class="nav-item" >
-    <a class="nav-link waves-light actions" (click)="signout()" mdbWavesEffect>
-      <i class="fa fa-power-off"></i> {{'App.Sign out' | translate}}</a>
-  </li> -->
+<p-overlayPanel #overlay>
   <app-actions *ngIf="isLoggedIn" [profil]="profil"></app-actions>
-</ng-template>
+</p-overlayPanel>
+
+<!-- Login Modal -->
+<p-dialog [(visible)]="loginDialog" modal [closable]="true" [header]="'App.Sign in' | translate" [style]="{width: '400px'}">
+  <div class="d-flex justify-content-center">
+    <button pButton class="w-50" (click)="loginDialog = true; signUpDialog = false;">
+      <h4 class="modal-title font-weight-bold"><span class="actii">{{ 'App.Sign in' | translate }}</span></h4>
+    </button>
+    <button pButton class="w-50" (click)="loginDialog = false; signUpDialog = true;">
+      <h4 class="modal-title font-weight-bold">{{ 'App.sign up' | translate }}</h4>
+    </button>
+  </div>
+
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="username">{{ 'App.Username' | translate }}</label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-user"></i>
+        <input id="username" type="text" [(ngModel)]="username" name="username" pInputText />
+      </span>
+    </div>
+
+    <div class="p-field">
+      <label for="password">{{ 'App.Password' | translate }}</label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-lock"></i>
+        <input id="password" type="password" [(ngModel)]="password" name="password" pInputText />
+      </span>
+    </div>
+  </div>
+
+  <p-footer>
+    <button pButton type="button" (click)="attemptLogin()" label="{{ 'App.Sign in' | translate }}"></button>
+  </p-footer>
+</p-dialog>
+
+<!-- Sign-up Modal -->
+<p-dialog [(visible)]="signUpDialog" modal [closable]="true" [header]="'App.sign up' | translate" [style]="{width: '400px'}">
+  <div class="d-flex justify-content-center">
+    <button pButton class="w-50" (click)="signUpDialog = false; loginDialog = true;">
+      <h4 class="modal-title font-weight-bold">{{ 'App.Sign in' | translate }}</h4>
+    </button>
+    <button pButton class="w-50">
+      <h4 class="modal-title font-weight-bold"><span class="actii">{{ 'App.sign up' | translate }}</span></h4>
+    </button>
+  </div>
+
+  <form [formGroup]="signUpForm">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="firstname">{{ 'App.Name' | translate }}</label>
+        <span class="p-input-icon-left">
+          <i class="pi pi-user"></i>
+          <input id="firstname" type="text" formControlName="firstname" name="firstname" pInputText />
+        </span>
+      </div>
+
+      <div class="p-field">
+        <label for="username">{{ 'App.Username' | translate }}</label>
+        <span class="p-input-icon-left">
+          <i class="pi pi-users"></i>
+          <input id="username" type="text" formControlName="username" name="username" pInputText />
+        </span>
+      </div>
+
+      <div class="p-field">
+        <label for="email">{{ 'App.Email' | translate }}</label>
+        <span class="p-input-icon-left">
+          <i class="pi pi-envelope"></i>
+          <input id="email" type="email" formControlName="email" name="email" pInputText />
+        </span>
+      </div>
+
+      <div class="p-field">
+        <label for="password">{{ 'App.Password' | translate }}</label>
+        <span class="p-input-icon-left">
+          <i class="pi pi-lock"></i>
+          <input id="password" type="password" formControlName="password" name="password" pInputText />
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <p-footer>
+    <button pButton type="button" (click)="signUp()" label="{{ 'App.sign up' | translate }}"></button>
+  </p-footer>
+</p-dialog>

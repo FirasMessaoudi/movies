@@ -9,10 +9,10 @@ import { MovieService } from 'src/app/service/movie.service';
   styleUrls: ['./productbyimdb.component.scss']
 })
 export class ProductbyimdbComponent implements OnInit {
-  p: number = 1;
-  s: number = 12;
-  t: number = 1;
-  top_rated:IMovie;
+  p = 1;
+  s = 12;
+  t = 1;
+  top_rated: IMovie;
   isLoading;
   showError: boolean;
   // tslint:disable-next-line:max-line-length
@@ -24,28 +24,27 @@ export class ProductbyimdbComponent implements OnInit {
 
   ngOnInit() {
     this.init();
-  
+
   }
-  init(){
+  init() {
    this.isLoading = true;
     this.service.getTopRatedMovies(this.p).subscribe(
-      res =>
-      {this.top_rated = res
+      res => {this.top_rated = res;
       this.t = res.total_pages;
       },
       erreur => {console.log('erreur movie');
       this.showError = true;
-    
-    },      ()=>{
+
+    },      () => {
         console.log(this.top_rated);
         this.isLoading = false;
 
       }
     );
   }
- changePage(event){
+ changePage(event) {
    this.p = event;
-   this.init()
+   this.init();
  }
 
 

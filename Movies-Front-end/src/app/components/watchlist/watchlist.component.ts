@@ -19,20 +19,20 @@ export class WatchlistComponent implements OnInit {
   submitted = false;
   watch: boolean;
   message: string;
-  favorits: IFavorit[]=[];
-  watchedMovies: MovieDetailsModel[]=[];
-  watchedTv: TvDetailsModel[]=[];
-  unWatchedMovies: MovieDetailsModel[]=[];
-  unWatchedTv: TvDetailsModel[]=[];
+  favorits: IFavorit[] = [];
+  watchedMovies: MovieDetailsModel[] = [];
+  watchedTv: TvDetailsModel[] = [];
+  unWatchedMovies: MovieDetailsModel[] = [];
+  unWatchedTv: TvDetailsModel[] = [];
   myWatchList: IFavorit[];
-  favoritsTv:TvDetailsModel[]=[];
-  favoritsMovies:MovieDetailsModel[]=[];
+  favoritsTv: TvDetailsModel[] = [];
+  favoritsMovies: MovieDetailsModel[] = [];
   movieUser: IMovieUserId;
   user: IUser;
-  username:string;
+  username: string;
   isLoggedIn: boolean;
   // tslint:disable-next-line:max-line-length
-  constructor(private tokenStorage: TokenStorageService,private service: UserService, private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
+  constructor(private tokenStorage: TokenStorageService, private service: UserService, private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
     this.router.routeReuseStrategy.shouldReuseRoute = function() {
       return false;
 } ;
@@ -41,132 +41,131 @@ export class WatchlistComponent implements OnInit {
   ngOnInit() {
     this.tokenStorage.currentStatus.subscribe(status => {
       this.isLoggedIn = status;
-      if(this.isLoggedIn){
-        this.username=this.tokenStorage.getUsername();
-    
+      if (this.isLoggedIn) {
+        this.username = this.tokenStorage.getUsername();
+
         this.service.getUser(this.username).subscribe(
           res => this.user = res,
           err => console.log(this.user.email),
           () => {
-           
+
            this.getWatchList();
            this.getFavoris();
-    
+
           }
         );
       } else {
         this.router.navigate(['/not-found']);
       }
-    })
-    
-  
-    
-  
+    });
+
+
+
+
 }
-updateFav($event){
-  let idM = this.favoritsMovies.findIndex(m=>m.id==$event);
-  let idTv=this.favoritsTv.findIndex(tv=>tv.id ==$event);
+updateFav($event) {
+  const idM = this.favoritsMovies.findIndex(m => m.id == $event);
+  const idTv = this.favoritsTv.findIndex(tv => tv.id == $event);
   console.log(idM);
   console.log(idTv);
-  
-  if(idM!==undefined)
+
+  if (idM !== undefined) {
   console.log('movie');
-  if(idTv!==undefined){
-  console.log('tv');
-  this.favoritsTv.splice(idTv,1);
   }
-  
-  
+  if (idTv !== undefined) {
+  console.log('tv');
+  this.favoritsTv.splice(idTv, 1);
+  }
+
+
 
 //  if(this.favori)
 }
-updateWatchlist($event){
-  let idwM = this.watchedMovies.findIndex(m=>m.id==$event);
-  let idwTv=this.watchedTv.findIndex(tv=>tv.id ==$event);
-  let idUwM=this.unWatchedMovies.findIndex(m=>m.id==$event);
-  let idUTv=this.unWatchedTv.findIndex(m=>m.id==$event);
-  this.watchedMovies.splice(idwM,1);
-  this.watchedTv.splice(idwTv,1);
-  this.unWatchedMovies.splice(idUwM,1);
-  this.unWatchedTv.splice(idUTv,1);
+updateWatchlist($event) {
+  const idwM = this.watchedMovies.findIndex(m => m.id == $event);
+  const idwTv = this.watchedTv.findIndex(tv => tv.id == $event);
+  const idUwM = this.unWatchedMovies.findIndex(m => m.id == $event);
+  const idUTv = this.unWatchedTv.findIndex(m => m.id == $event);
+  this.watchedMovies.splice(idwM, 1);
+  this.watchedTv.splice(idwTv, 1);
+  this.unWatchedMovies.splice(idUwM, 1);
+  this.unWatchedTv.splice(idUTv, 1);
 
   }
 
-getWatchList(){
+getWatchList() {
   this.watchedMovies = [];
   this.watchedTv = [];
   this.unWatchedMovies = [];
   this.unWatchedTv = [];
   this.myWatchList = [];
   this.service.getWatchList(this.user.email).subscribe(
-    res => this.myWatchList =res,
-    err=>console.log(err.error),
-    ()=>{
+    res => this.myWatchList = res,
+    err => console.log(err.error),
+    () => {
       this.myWatchList.forEach(element => {
-        if(element.section=='Series'){
+        if (element.section == 'Series') {
           this.movieService.getTvShowById(element.movieUserID.idMovie).subscribe(
-            res=>
-            {
-              if(element.watched)
-              this.watchedTv.push(res)
-              else 
-              this.unWatchedTv.push(res)
+            res => {
+              if (element.watched) {
+              this.watchedTv.push(res);
+              } else {
+              this.unWatchedTv.push(res);
+              }
            },
-            err=>console.log(err.error),
-          )
+            err => console.log(err.error),
+          );
         } else {
          this.movieService.getMovieById(element.movieUserID.idMovie).subscribe(
-           res=>
-           {
-             if(element.watched)
-             this.watchedMovies.push(res)
-             else 
-             this.unWatchedMovies.push(res)
-          },            
-           err=>console.log(err.error),
-           ()=>{
-             console.log(this.unWatchedMovies)
+           res => {
+             if (element.watched) {
+             this.watchedMovies.push(res);
+             } else {
+             this.unWatchedMovies.push(res);
+             }
+          },
+           err => console.log(err.error),
+           () => {
+             console.log(this.unWatchedMovies);
            }
-         )
+         );
         }
       });
     }
  );
 }
-getFavoris(){
+getFavoris() {
   this.favorits = [];
   this.favoritsTv = [];
   this.favoritsMovies = [];
   this.service.getFavoritsByUser(this.user.email).subscribe(
-    res =>this.favorits = res,
-    er =>console.log(er.error),
-    ()=>{
+    res => this.favorits = res,
+    er => console.log(er.error),
+    () => {
 
       this.favorits.forEach(element => {
-        if(element.section=='Series'){
+        if (element.section == 'Series') {
           this.movieService.getTvShowById(element.movieUserID.idMovie).subscribe(
-            res=>
-            {
+            res => {
              this.favoritsTv.push(res);
            },
-            err=>console.log(err.error),
-          )
+            err => console.log(err.error),
+          );
         } else {
          this.movieService.getMovieById(element.movieUserID.idMovie).subscribe(
-           res=>
-           {
+           res => {
             this.favoritsMovies.push(res);
 
-          },            
-           err=>console.log(err.error),
-         )
+          },
+           err => console.log(err.error),
+         );
         }
       });
 
 
     }
 
-  )
+  );
 }
-  
+
 }

@@ -11,13 +11,13 @@ import { MovieService } from 'src/app/service/movie.service';
 export class AllproductbycategoryComponent implements OnInit {
   movies: IMovie;
   category: number;
-  name:string
-  section:string;
-  p: number = 1;
-s: number = 12;
-t: number = 1;
+  name: string;
+  section: string;
+  p = 1;
+s = 12;
+t = 1;
 isLoading;
-showError= false;
+showError = false;
   constructor(private route: ActivatedRoute, private router: Router, private movieService: MovieService) {
     this.router.routeReuseStrategy.shouldReuseRoute = function() {
       return false;
@@ -37,41 +37,39 @@ showError= false;
       this.section = params['section'];
     }
     );
-    
-   this.init()
+
+   this.init();
   }
-  init(){
+  init() {
     this.isLoading = true;
-    if(this.section=='Movies'){
-      this.movieService.getMoviesByGenre(this.category,this.p).subscribe(
-        res =>
-        {this.movies = res
+    if (this.section == 'Movies') {
+      this.movieService.getMoviesByGenre(this.category, this.p).subscribe(
+        res => {this.movies = res;
         this.t = res.total_pages;
         },
         erreur => {console.log('erreur section and category');
         this.showError = true;
-      
+
       },
-        ()=>{
+        () => {
           console.log(this.movies);
-          this.isLoading =false;
+          this.isLoading = false;
 
         }
       );
-  
+
     } else {
-      this.movieService.getTvByGenre(this.category,this.p).subscribe(
-        res =>
-        {this.movies = res
+      this.movieService.getTvByGenre(this.category, this.p).subscribe(
+        res => {this.movies = res;
         this.t = res.total_pages;
         },
         erreur => {
         console.log('erreur section and category');
         this.showError = true;
-      
-      },        ()=>{
-          console.log(this.movies)
-          this.isLoading =false;
+
+      },        () => {
+          console.log(this.movies);
+          this.isLoading = false;
 
         }
       );
@@ -79,11 +77,11 @@ showError= false;
     this.isLoading = false;
 
   }
-  changePage($event){
+  changePage($event) {
     this.p = $event;
     console.log(this.p);
     this.init();
-  
+
   }
 
 

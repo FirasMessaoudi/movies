@@ -1,8 +1,5 @@
 @import 'assets/scss/palette';
-@import '~ngx-bar-rating/themes/br-fontawesome-theme';
-@import "~primeicons/primeicons.css";
-@import "~primeng/resources/themes/nova-light/theme.css";
-@import "~primeng/resources/primeng.min.css";
+//@import '~ngx-bar-rating/themes/br-fontawesome-theme';
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -12,7 +9,7 @@
     z-index:-1 !important;
   }
 
- 
+
 .cdk-global-overlay-wrapper, .cdk-overlay-container {
     z-index: 99999 !important;
  }
@@ -34,9 +31,9 @@
 }
 .card {
     box-shadow: none !important;
-    
+
         background-color: #13151a !important;
-    
+
 }
 .ngx-pagination a {
     color: #FFF !important;
@@ -63,7 +60,7 @@
     color: #fbb829;
 
   }
- 
+
   html {
     box-sizing: border-box;
 }
@@ -108,7 +105,7 @@ h4 {
     color: #ffffff !important;
   }
   .mat-select-value-text{
-    color: #ffffff !important; 
+    color: #ffffff !important;
   }
   .mat-select-placeholder{
     color: #ffffff !important;
@@ -214,7 +211,7 @@ h1.mat-dialog-title {
     justify-content: center;
 
     @media only screen and (min-width: 731px){
-        left: 208px;  
+        left: 208px;
     }
 }
 $spinner-size: 4rem;
@@ -232,7 +229,7 @@ $animation-speed: 2s;
     height: $spinner-size;
     border: $spinner-thickness solid #9c27b0;
     animation: $animation-speed infinite spin ease-in-out;
-    
+
       &:nth-child(1){
         animation-delay: 0s;
       }
@@ -282,4 +279,4 @@ $animation-speed: 2s;
 }
 
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
-@import '~css-star-rating/scss/star-rating';
+//@import '~css-star-rating/scss/star-rating';
