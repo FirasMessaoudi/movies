@@ -2,7 +2,7 @@
     width: 640px;
     height: 240px;
   }
-  
+
   .carousel-item {
     display: block !important;
       z-index: 1;
@@ -11,14 +11,14 @@
       opacity: 0;
       visibility: hidden;
   }
-  
+
   .carousel-item.active {
     position: relative;
       transition: opacity 1.5s easy-in-out, visibility 1s;
       visibility: visible;
       opacity: 1;
   }
-  
+
   @keyframes slideFromLeft {
     from {
       transform: translateX(-100%);
@@ -44,7 +44,7 @@
   //   height: 58px;
   //   position: absolute;
   //   background-color: rgba(0,0,0,.2);
-  //   top: 0px; 
+  //   top: 0px;
   //  //  z-index: 1;
   // }
   // .moviedetails{
@@ -55,7 +55,7 @@
   //   bottom: 0px;
   //   z-index: 1;
   //   @media only screen and (max-width: 767px) {
-     
+
   // }
   // }
   // .details {
@@ -97,12 +97,12 @@
   //   @media only screen and (max-width: 731px) {
   //     display: none;
   // }
-   
+
   // }
   // .notegenre {
   //   color: #fff;
   // }
-  
+
   // [nz-carousel-content] {
   //   text-align: center;
   //   height: 550px;
@@ -168,7 +168,7 @@
   //     left:20px;
   //   }
   // }
-  
+
   // .slider-items {
   //   width: 100%;
   //   margin: 0px auto;

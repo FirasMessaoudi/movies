@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, input, InputSignal} from '@angular/core';
 
 @Component({
   selector: 'app-cardmovie',
@@ -8,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardmovieComponent implements OnInit {
   @Input()
   id: number;
-  @Input()
-  image: string;
+  image: InputSignal<string> = input('');
   @Input()
   title: string;
   @Input()

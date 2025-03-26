@@ -53,6 +53,8 @@ import {RatingModule} from 'primeng/rating';
 import {MenubarModule} from 'primeng/menubar';
 import {BarRating} from 'ngx-bar-rating';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import {TooltipModule} from 'ngx-bootstrap/tooltip';
+import {ShareButtonDirective} from 'ngx-sharebuttons';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -111,7 +113,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     DropdownModule,
     MultiSelectModule,
     ModalModule.forRoot(),
-     LazyLoadImageModule,
+    LazyLoadImageModule,
     // Ng4LoadingSpinnerModule.forRoot(),
     NgxSpinnerModule,
     TranslateModule.forRoot({
@@ -132,6 +134,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     MenubarModule,
     Button,
     BarRating,
+    TooltipModule,
+    ShareButtonDirective,
 
   ],
   providers: [{provide: HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig}

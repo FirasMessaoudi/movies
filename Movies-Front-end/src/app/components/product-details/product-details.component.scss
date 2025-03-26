@@ -57,7 +57,7 @@
                 background-position: initial;
             }
         }
-        
+
         .vignette {
             position: absolute;
             top: 0;
@@ -66,7 +66,7 @@
             width: 30%;
             background: $black;
             z-index: 2;
-        
+
             &::before {
                 content: '';
                 position: absolute;
@@ -160,28 +160,28 @@
         }
     }
 }
-   
+
 
 .movie {
     &__tab {
         .movie {
             &--cast {
-                a.mat-list-item {
-                    &:hover {
-                        background: $background;
-                    }
-                }
-                /deep/ .mat-list-text {
-                    h3 {
-                        color: $primary-light;
-                        text-align: left;
-                    }
-                
-                    p {
-                        color: $grey;
-                        text-align: left;
-                    }
-                }
+                //a.mat-list-item {
+                //    &:hover {
+                //        background: $background;
+                //    }
+                //}
+                ///deep/ .mat-list-text {
+                //    h3 {
+                //        color: $primary-light;
+                //        text-align: left;
+                //    }
+                //
+                //    p {
+                //        color: $grey;
+                //        text-align: left;
+                //    }
+                //}
             }
             &--trailer {
                 margin: 30px 0;
@@ -189,7 +189,7 @@
                 iframe {
                     display: block;
                     margin: .625rem auto;
-                
+
                     @media only screen and (max-width: 731px) {
                         width: 100%;
                     }
@@ -279,11 +279,11 @@ h1{
     transform: translate(-50%, -50%);
     color: #e91e63;
   }
-  
+
   $spinner-size: 4rem;
   $spinner-thickness: 0.1em;
   $animation-speed: 2s;
-  
+
   .spinner {
     span{
       position: absolute;
@@ -295,7 +295,7 @@ h1{
       height: $spinner-size;
       border: $spinner-thickness solid #9c27b0;
       animation: $animation-speed infinite spin ease-in-out;
-      
+
         &:nth-child(1){
           animation-delay: 0s;
         }
@@ -313,7 +313,7 @@ h1{
         }
     }
   }
-  
+
   @keyframes spin{
     0%{
       transform: translate(-50%, -50%) rotate(0) scale(0);

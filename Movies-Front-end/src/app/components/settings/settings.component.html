@@ -8,7 +8,7 @@
   <div class="about__body">
     <div class="about--container">
       <div class="about--info">
-        <p-icon name="message"></p-icon>
+        <i class="message"></i>
         <h3>Contact</h3>
         <p style="color: blanchedalmond">If you have any suggestion or for further information click <a style="color: #FF424F" (click)="frame = true">here</a> to contact us</p>
       </div>
@@ -16,7 +16,7 @@
 
     <div class="about--container">
       <div class="about--info">
-        <p-icon name="perm_identity"></p-icon>
+        <i class="pi perm_identity"></i>
         <h3>Developer</h3>
         <p style="color: blanchedalmond">Firas Messaoudi</p>
       </div>
@@ -24,7 +24,7 @@
 
     <div class="about--container">
       <div class="about--info">
-        <p-icon name="movie_filter"></p-icon>
+        <i class="movie_filter"></i>
         <h3>The Movie Database</h3>
         <p style="color: blanchedalmond">This application is developed using the Movie Database (Tmdb)</p>
       </div>
@@ -32,7 +32,7 @@
 
     <div class="about--container">
       <div class="about--info">
-        <p-icon name="language"></p-icon>
+        <i class="language"></i>
         <h3>Language</h3>
         <div style="width: 11%; padding-top: 1.5%" class="setting">
           <p-dropdown [options]="languages" [(ngModel)]="lang" [placeholder]="'App.Language' | translate" (onChange)="languageChange($event)">
@@ -47,26 +47,26 @@
 </div>
 
 <!-- Contact form Modal -->
-<p-dialog [(visible)]="frame == true" [modal]="true" [header]="'Write to us'" [closable]="true" [style]="{width: '50vw'}" (onHide)="frame = false">
+<p-dialog [(visible)]="frame" [modal]="true" [header]="'Write to us'" [closable]="true" [style]="{width: '50vw'}" (onHide)="frame = false">
   <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
     <div class="p-fluid">
       <div class="p-field">
-        <p-icon name="perm_identity"></p-icon>
+        <i class="perm_identity"></i>
         <input formControlName="name" placeholder="Name" type="text" class="p-inputtext p-component" />
       </div>
 
       <div class="p-field">
-        <p-icon name="email"></p-icon>
+        <i class="email"></i>
         <input formControlName="email" placeholder="Email" type="email" class="p-inputtext p-component" />
       </div>
 
       <div class="p-field">
-        <p-icon name="subject"></p-icon>
+        <i class="subject"></i>
         <input formControlName="subject" placeholder="Subject" type="text" class="p-inputtext p-component" />
       </div>
 
       <div class="p-field">
-        <p-icon name="message"></p-icon>
+        <i class="message"></i>
         <textarea formControlName="message" placeholder="Message" class="p-inputtext p-component" rows="5"></textarea>
       </div>
 

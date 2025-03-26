@@ -1,6 +1,11 @@
 .navbar {
     position: fixed !important;
 }
+:host ::ng-deep .p-menubar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
 a{
     text-shadow: #000;
     color: #fff;
@@ -17,7 +22,7 @@ border-bottom: 2px solid #FF424F !important;
 }
 .sdiv{
     position: relative;
-    
+
 }
 .search{
     position: absolute;

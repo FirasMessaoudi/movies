@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1afd28fd-9705-4979-905f-363f15c05f3f" name="Default Changelist" comment="" />
+    <list default="true" id="1afd28fd-9705-4979-905f-363f15c05f3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/allproductbycategory/allproductbycategory.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/allproductbycategory/allproductbycategory.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/cardmovie/cardmovie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/cardmovie/cardmovie.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/cardmovie/cardmovie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/cardmovie/cardmovie.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/highlights/highlights.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/highlights/highlights.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/navbar/navbar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/navbar/navbar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/product-details/product-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/product-details/product-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/product-details/product-details.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/product-details/product-details.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/settings/settings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/settings/settings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/watchlist/watchlist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/app/components/watchlist/watchlist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies-Front-end/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies-Front-end/src/polyfills.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,6 +194,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "FirasMessaoudi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/FirasMessaoudi/movies.git",
+    "accountId": "923afc1d-0723-482b-924c-d398f9f32195"
+  }
+}]]></component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -253,9 +279,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -335,7 +361,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "migrate-angular-17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/massaofi/Documents/Firas/movies/Movies-back-end",
     "node.js.detected.package.eslint": "true",
@@ -381,8 +409,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
@@ -447,6 +475,7 @@
       <workItem from="1565682730834" duration="1662000" />
       <workItem from="1569422448993" duration="11628000" />
       <workItem from="1725017340853" duration="307000" />
+      <workItem from="1742976989874" duration="2429000" />
     </task>
     <task id="LOCAL-00001" summary="Couche service">
       <created>1565376223768</created>
